@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Template for the social share image. Regenerate with:
+     npx -y playwright screenshot --viewport-size=1200,630 --wait-for-timeout=2500 scripts/og.html public/og.png -->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono&display=swap" rel="stylesheet" />
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: #ededec; color: #14161a;
+    font-family: "Space Grotesk", sans-serif;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .wrap { display: flex; align-items: center; gap: 64px; }
+  .barrel { width: 270px; height: 270px; color: #9E3039; transform: rotate(8deg); }
+  .mark { font-weight: 700; font-size: 130px; letter-spacing: .14em; line-height: 1; }
+  .mark .dot { color: #9E3039; }
+  .sub {
+    margin-top: 22px;
+    font-weight: 500; font-size: 31px; letter-spacing: .16em;
+    text-transform: uppercase; color: #565c66;
+  }
+  .url {
+    position: absolute; left: 0; right: 0; bottom: 38px;
+    text-align: center;
+    font-family: "Space Mono", monospace; font-size: 24px; color: #8b919b;
+  }
+  .rule { position: absolute; left: 0; right: 0; height: 6px; background: #9E3039; }
+  .rule.top { top: 0; } .rule.bottom { bottom: 0; }
+</style>
+</head>
+<body>
+  <div class="rule top"></div>
+  <div class="wrap">
+    <svg class="barrel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10c2.2 2.7 2.2 15.3 0 18H7c-2.2-2.7-2.2-15.3 0-18Z"/><path d="M12 3v18"/><path d="M5.6 7.5c4.2 1.5 8.6 1.5 12.8 0M5.6 15.5c4.2 1.5 8.6 1.5 12.8 0"/></svg>
+    <div>
+      <div class="mark">MUCA<span class="dot">.</span></div>
+      <div class="sub">Latvian breweries map<br/>beer · cider · wine</div>
+    </div>
+  </div>
+  <div class="url">muca.didnt.work</div>
+  <div class="rule bottom"></div>
+</body>
+</html>
