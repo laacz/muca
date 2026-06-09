@@ -1906,5 +1906,23 @@
     "logo": "",
     "website": "https://www.pikolo.lv",
     "description": "Award-winning berry and fruit wine producer in Kurzeme, offering tastings of carefully crafted wines, liqueurs, and spirits made from locally grown strawberries and quince."
+  },
+  {
+    "id": "prusaks",
+    "name": "Alus darīšanas apvienība Prusaks",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Tirgoņu iela 23, Majori, Jūrmala, LV-2015",
+    "city": "Jūrmala",
+    "region": "Rīga",
+    "lat": 56.9723,
+    "lng": 23.8005,
+    "coord_precision": "exact",
+    "founded": 2022,
+    "logo": "/logos/prusaks.jpg",
+    "website": "https://www.facebook.com/prusaksalus",
+    "description": "Craft nano-brewery in a small courtyard in Majori, central Jūrmala, brewing since 2022. Alongside balanced lagers, ales and IPAs it makes experimental brews like tomato-chili gose, plus mead and seltzers, with artist-designed labels and brewery tours with tastings."
   }
 ]
