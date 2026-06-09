@@ -48,13 +48,13 @@
       display: grid; place-items: center;
       padding: 24px 22px 9vh; text-align: center;
     }
-    .barrel { width: 96px; height: 96px; color: var(--ink); transform: rotate(104deg); margin-bottom: 10px; }
     .code {
+      display: inline-flex; align-items: center;
       font-family: "Space Grotesk", system-ui, sans-serif;
       font-weight: 700; font-size: clamp(64px, 14vw, 112px);
       letter-spacing: .1em; line-height: 1.05;
     }
-    .code .dot { color: var(--accent); }
+    .code .zero { width: .98em; height: .98em; margin: 0 .02em 0 .08em; color: var(--accent); transform: rotate(16deg); }
     .proverb {
       font-family: "Space Grotesk", system-ui, sans-serif;
       font-weight: 600; font-size: clamp(19px, 3.2vw, 24px);
@@ -82,8 +82,7 @@
 
   <main>
     <div>
-      <svg class="barrel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10c2.2 2.7 2.2 15.3 0 18H7c-2.2-2.7-2.2-15.3 0-18Z"/><path d="M12 3v18"/><path d="M5.6 7.5c4.2 1.5 8.6 1.5 12.8 0M5.6 15.5c4.2 1.5 8.6 1.5 12.8 0"/></svg>
-      <div class="code">4<span class="dot">0</span>4</div>
+      <div class="code" role="img" aria-label="404">4<svg class="zero" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10c2.2 2.7 2.2 15.3 0 18H7c-2.2-2.7-2.2-15.3 0-18Z"/><path d="M12 3v18"/><path d="M5.6 7.5c4.2 1.5 8.6 1.5 12.8 0M5.6 15.5c4.2 1.5 8.6 1.5 12.8 0"/></svg>4</div>
       <p class="proverb" lang="lv">Tukša muca tālu skan.</p>
       <p class="gloss">“An empty barrel sounds the farthest” — and this one is empty.
         The page you're after isn't here.</p>
