@@ -246,7 +246,7 @@
     "address": "\"Bodnieki\", Praulienas pagasts, Madonas novads, LV-4825",
     "city": "Bodnieki",
     "region": "Vidzeme",
-    "lat": 56.827220,
+    "lat": 56.82722,
     "lng": 26.363285,
     "coord_precision": "exact",
     "founded": 1916,
@@ -885,11 +885,1026 @@
     "city": "Jūrmala",
     "region": "Rīga",
     "lat": 56.9695473,
-    "lng": 23.7759060,
+    "lng": 23.775906,
     "coord_precision": "exact",
     "founded": 2017,
     "logo": "/logos/konkordijas-alus.jpg",
     "website": "https://www.facebook.com/konkordijas/",
     "description": "A family-run business founded on a love of beer and a commitment to creating high-quality products that give beer lovers an unforgettable taste experience."
+  },
+  {
+    "id": "arpus",
+    "name": "Ārpus Brewing Co.",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "\"Jauntrenči\", Eimuri, Ādažu pagasts, Ādažu novads, LV-2164",
+    "city": "Eimuri",
+    "region": "Vidzeme",
+    "lat": 57.08778,
+    "lng": 24.2875,
+    "coord_precision": "approx",
+    "founded": 2017,
+    "logo": "/logos/arpus.png",
+    "website": "https://arpusbrewing.co",
+    "description": "Independent craft microbrewery near Rīga founded in 2017, operating from its own 20hL facility in Eimuri since 2019, and known for hop-forward ales, fruity sour beers, and bold imperial stouts."
+  },
+  {
+    "id": "ilgezeem",
+    "name": "Iļģuciema Alus / ILGEZEEM",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Daugavgrīvas iela 82, Rīga, LV-1007",
+    "city": "Rīga",
+    "region": "Rīga",
+    "lat": 56.95994,
+    "lng": 24.06996,
+    "coord_precision": "exact",
+    "founded": 1863,
+    "logo": "/logos/ilgezeem.png",
+    "website": "https://ilgezeem.lv",
+    "description": "Rīga's oldest surviving brewery, tracing its roots to 1863 in the Iļģuciems suburb, today an independent modern operation producing traditional unfiltered barley beer, kvass, and natural craft beverages."
+  },
+  {
+    "id": "alus-bralis",
+    "name": "Alus Brālis",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "\"Ojāri\", Griķi, Inčukalna pagasts, Siguldas novads, LV-2136",
+    "city": "Griķi",
+    "region": "Vidzeme",
+    "lat": 57.07428,
+    "lng": 24.58325,
+    "coord_precision": "approx",
+    "founded": 2002,
+    "logo": "/logos/alus-bralis.svg",
+    "website": "https://bralis.lv",
+    "description": "Independent brewery established in 2002 in the rural Inčukalna pagasts forests, producing a range of filtered and unfiltered Latvian lagers sold through on-site stores and the neighbouring Pie Brāļa pub."
+  },
+  {
+    "id": "latgales-alus",
+    "name": "Latgales Alus",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Dzirnavu iela 22, Daugavpils, LV-5401",
+    "city": "Daugavpils",
+    "region": "Latgale",
+    "lat": 55.86418,
+    "lng": 26.52606,
+    "coord_precision": "approx",
+    "founded": 1860,
+    "logo": "/logos/latgales-alus.png",
+    "website": "https://www.latgalus.com",
+    "description": "One of Latvia's oldest breweries with roots dating to 1860, producing unpasteurised barley beer in Daugavpils from its historic Dzirnavu iela facility, with guided tours and tastings available on site."
+  },
+  {
+    "id": "duna-brewery",
+    "name": "DUNA Brewery",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Kaļķu iela 14, Kuldīga, Kuldīgas novads, LV-3301",
+    "city": "Kuldīga",
+    "region": "Kurzeme",
+    "lat": 56.97249,
+    "lng": 21.97045,
+    "coord_precision": "exact",
+    "founded": 2014,
+    "logo": "/logos/duna-brewery.png",
+    "website": "https://dunabrewery.com",
+    "description": "Independent craft brewery and taproom in Kuldīga's old town, combining traditional skills with modern ales, bold IPAs, and barrel-aged beers matured in Burgundy oak casks sourced from local ingredients."
+  },
+  {
+    "id": "v1-brewery",
+    "name": "V1 Brewery",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Lejupes iela 7, Ādaži, Ādažu novads, LV-2164",
+    "city": "Ādaži",
+    "region": "Vidzeme",
+    "lat": 57.06985,
+    "lng": 24.36158,
+    "coord_precision": "exact",
+    "founded": 2018,
+    "logo": "/logos/v1-brewery.jpg",
+    "website": "https://v1brewery.lv",
+    "description": "Modern craft brewery opened in 2018 in the Ādaži industrial zone, producing a diverse range of styles from Belgian classics to American-inspired ales, with brewery excursions available for visitors."
+  },
+  {
+    "id": "jaunpils-alus",
+    "name": "Jaunpils alus",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Šķūnis Baltais Centrā, Jaunpils, Jaunpils pagasts, Tukuma novads, LV-3145",
+    "city": "Jaunpils",
+    "region": "Kurzeme",
+    "lat": 56.73002,
+    "lng": 23.01071,
+    "coord_precision": "exact",
+    "founded": 2017,
+    "logo": "/logos/jaunpils-alus.png",
+    "website": "https://www.jaunpilsalus.lv/",
+    "description": "Family-run craft brewery launched in May 2017 in the historic village of Jaunpils, offering tours of its converted barn brewery, a taproom with snacks, and a range of ales, lagers, IPAs and wheat beers to taste and buy."
+  },
+  {
+    "id": "saldalus",
+    "name": "Saldalus",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Striķu iela 65, Saldus, LV-3801",
+    "city": "Saldus",
+    "region": "Kurzeme",
+    "lat": 56.6585,
+    "lng": 22.5035,
+    "coord_precision": "approx",
+    "founded": 2012,
+    "logo": "/logos/saldalus.png",
+    "website": "https://saldalus.lv/",
+    "description": "One of Latvia's smallest breweries, hand-crafting five traditional beer styles in Saldus since 2012 using oak-barrel fermentation, a multi-infusion mash and only natural ingredients — malt, hops, yeast and local groundwater."
+  },
+  {
+    "id": "rose-brewery",
+    "name": "Rose Brewery",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Pirmā iela 38A, Ādaži, Ādažu novads, LV-2164",
+    "city": "Ādaži",
+    "region": "Vidzeme",
+    "lat": 57.08052,
+    "lng": 24.32222,
+    "coord_precision": "exact",
+    "founded": 2015,
+    "logo": "/logos/rose-brewery.png",
+    "website": "https://adazualus.lv/",
+    "description": "Independent craft brewery in Ādaži trading as Ādažu Meistara Alus, producing six distinctive beers sold on-site and supplied to cafés and restaurants across Latvia, with guided group tastings available by arrangement."
+  },
+  {
+    "id": "kussh-brewery",
+    "name": "Kussh Brewery",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Zinātnes iela 11, Sigulda, Siguldas novads, LV-2150",
+    "city": "Sigulda",
+    "region": "Vidzeme",
+    "lat": 57.14754,
+    "lng": 24.89322,
+    "coord_precision": "exact",
+    "founded": 2019,
+    "logo": "/logos/kussh-brewery.jpg",
+    "website": "https://www.kusshbrewery.com/",
+    "description": "Independent craft brewery and weekday taproom in Sigulda's Peltes district, founded in 2019, known for creative hop-forward ales and rotating seasonal brews, with advance-booked brewery masterclasses for groups of 4–40."
+  },
+  {
+    "id": "hat-brewery",
+    "name": "HAT Brewery",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "\"Lāmiņas\", Katlakalns, Ķekavas pagasts, Ķekavas novads, LV-2111",
+    "city": "Katlakalns",
+    "region": "Zemgale",
+    "lat": 56.90858,
+    "lng": 24.15093,
+    "coord_precision": "approx",
+    "founded": 2021,
+    "logo": "/logos/hat-brewery.jpg",
+    "website": "https://www.hatbrewery.lv/",
+    "description": "Craft micro-brewery established in 2021 at the Lāmiņas homestead in Katlakalns, Ķekavas novads, celebrated for juicy hazy IPAs and striking Viking-themed labels; a compact taproom is also open at Dzirnavu iela 66 in Rīga."
+  },
+  {
+    "id": "puta-brewery",
+    "name": "Puta Brewery",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Vecā ostmala 53, Liepāja, LV-3401",
+    "city": "Liepāja",
+    "region": "Kurzeme",
+    "lat": 56.51439,
+    "lng": 21.00332,
+    "coord_precision": "exact",
+    "founded": 2019,
+    "logo": "/logos/puta-brewery.jpg",
+    "website": "https://www.facebook.com/putabrewery/",
+    "description": "Liepāja's first craft micro-brewery, born in 2019 inside the historic Spīķeris granary at Vecā ostmala 53, producing IPA and lager poured on tap at the adjoining Spīķeris 53 restaurant and distributed in cans across Latvia."
+  },
+  {
+    "id": "bursh",
+    "name": "BURSH",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "\"Burši\", Aiviekstes pagasts, Aizkraukles novads, LV-5120",
+    "city": "Burši",
+    "region": "Vidzeme",
+    "lat": 56.62616,
+    "lng": 25.88532,
+    "coord_precision": "approx",
+    "founded": 2014,
+    "logo": "/logos/bursh.png",
+    "website": "https://www.burshalus.lv/",
+    "description": "One of Latvia's smallest breweries, established on 7 April 2014 in a century-old stone farmstead on the banks of the Aiviekste River in Aizkraukles novads, hand-crafting light, dark and IPA beers with local water and natural ingredients."
+  },
+  {
+    "id": "bruzis-manufaktura",
+    "name": "Brūzis Manufaktūra",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Brīvības gatve 401C, Rīga, LV-1024",
+    "city": "Rīga",
+    "region": "Rīga",
+    "lat": 56.98982,
+    "lng": 24.23051,
+    "coord_precision": "exact",
+    "founded": 2022,
+    "logo": "/logos/bruzis-manufaktura.jpg",
+    "website": "https://bruzismanufaktura.lv/",
+    "description": "Award-winning craft brewpub that opened in summer 2022 inside the renovated Manufaktūra courtyard complex in Jugla, with visible on-site brewing, seasonal ales, brunches, and concerts in a light-flooded industrial space."
+  },
+  {
+    "id": "alus-rume-trofeja",
+    "name": "Alus Rūme Trofeja",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Avotu iela 74a, Rīga, LV-1009",
+    "city": "Rīga",
+    "region": "Rīga",
+    "lat": 56.95312,
+    "lng": 24.1453,
+    "coord_precision": "exact",
+    "founded": 2020,
+    "logo": "/logos/alus-rume-trofeja.png",
+    "website": "https://trofeja.lv/",
+    "description": "Latvia's smallest brewery, running a ten-tank nano-brewhouse in the Avotu neighbourhood, where master brewer Valdis Novikovs crafts rotating seasonal ales, dry meads and hop-forward IPAs alongside artisanal pizza."
+  },
+  {
+    "id": "ziemelu-enkurs",
+    "name": "Ziemeļu Enkurs",
+    "types": [
+      "beer"
+    ],
+    "status": "defunct",
+    "address": "Matīsa iela 8, Rīga, LV-1001",
+    "city": "Rīga",
+    "region": "Rīga",
+    "lat": 56.95845,
+    "lng": 24.12978,
+    "coord_precision": "exact",
+    "founded": 2018,
+    "logo": "/logos/ziemelu-enkurs.jpg",
+    "website": "https://www.ziemeluenkurs.lv/",
+    "description": "Craft brewpub opened in 2018 by brewer Dāvis Linde and sailor Klāvs Killo at Matīsa iela 8, producing IPAs, pale ales and Baltic-inspired styles; now permanently closed."
+  },
+  {
+    "id": "alus-darbnica-teika",
+    "name": "Alus darbnīca TEIKA",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Brīvības gatve 348, Rīga, LV-1006",
+    "city": "Rīga",
+    "region": "Rīga",
+    "lat": 56.98145,
+    "lng": 24.19437,
+    "coord_precision": "exact",
+    "founded": 2015,
+    "logo": "/logos/alus-darbnica-teika.jpg",
+    "website": "https://www.alusteika.lv/",
+    "description": "Independent neighbourhood brewery and workshop-bar in Rīga's leafy Teika district, founded in 2015, serving experimental small-batch craft ales brewed on-site in a relaxed, community-focused setting."
+  },
+  {
+    "id": "alkimikis",
+    "name": "Alķīmiķis",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Lāčplēša iela 12, Rīga, LV-1010",
+    "city": "Rīga",
+    "region": "Rīga",
+    "lat": 56.9565,
+    "lng": 24.12062,
+    "coord_precision": "exact",
+    "founded": null,
+    "logo": "/logos/alkimikis.jpg",
+    "website": "https://www.facebook.com/AlkimikisAlus/",
+    "description": "Craft brewpub on Rīga's craft-beer street, housed in a charming historic wooden building where over 15 rotating seasonal styles—from rhubarb IPAs to coffee stouts—are brewed and poured on-site."
+  },
+  {
+    "id": "peters-brewhouse",
+    "name": "Peter's Brewhouse",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Skārņu iela 9, Rīga, LV-1050",
+    "city": "Rīga",
+    "region": "Rīga",
+    "lat": 56.94806,
+    "lng": 24.10877,
+    "coord_precision": "exact",
+    "founded": null,
+    "logo": "/logos/peters-brewhouse.jpg",
+    "website": "https://www.facebook.com/petersbrewhouse/",
+    "description": "Old Town Rīga's only in-house restaurant brewery, steps from St. Peter's Church, brewing light, dark and red lagers on the premises and serving them alongside traditional Latvian and German cuisine."
+  },
+  {
+    "id": "stargorod-riga",
+    "name": "Stargorod Rīga",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Republikas laukums 1, Rīga, LV-1010",
+    "city": "Rīga",
+    "region": "Rīga",
+    "lat": 56.95324,
+    "lng": 24.09923,
+    "coord_precision": "exact",
+    "founded": 2005,
+    "logo": "/logos/stargorod-riga.jpg",
+    "website": "https://stargorod.lv/en/",
+    "description": "Czech-style brewpub established in 2005 in a 300-year-old building at Republic Square, brewing traditional Czech lager, dark beer and special Latvian-recipe ales on classic European equipment with guided brewery tours."
+  },
+  {
+    "id": "vecais-taizels",
+    "name": "Vecais Taizel's",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Pasta iela 1, Liepāja, LV-3401",
+    "city": "Liepāja",
+    "region": "Kurzeme",
+    "lat": 56.51068,
+    "lng": 21.01239,
+    "coord_precision": "exact",
+    "founded": null,
+    "logo": "",
+    "website": "https://vecaistaizels.lv/",
+    "description": "Beloved Liepāja beer pub and brewery in the historic city centre, crafting its own fresh pilsner and seasonal ales on-site in a basement brewhouse, paired with hearty traditional Latvian dishes."
+  },
+  {
+    "id": "aizputes-muizas-alus",
+    "name": "Aizputes muižas alus darītava",
+    "types": [
+      "beer",
+      "cider"
+    ],
+    "status": "working",
+    "address": "Liepājas iela 8A, Aizpute, Dienvidkurzemes novads, LV-3456",
+    "city": "Aizpute",
+    "region": "Kurzeme",
+    "lat": 56.72158,
+    "lng": 21.60063,
+    "coord_precision": "exact",
+    "founded": 2018,
+    "logo": "/logos/aizputes-muizas-alus.png",
+    "website": "https://aizputesalus.com",
+    "description": "Manor brewery on the Tebra riverbank in Aizpute, producing light, dark, wheat, and pilsner beers alongside original kvass and rowanberry cider since 2018."
+  },
+  {
+    "id": "fisera-alus",
+    "name": "Fišera alus darītava",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Brīvības iela 33, Viesīte, Jēkabpils novads, LV-5237",
+    "city": "Viesīte",
+    "region": "Zemgale",
+    "lat": 56.34489,
+    "lng": 25.54688,
+    "coord_precision": "exact",
+    "founded": 2025,
+    "logo": "/logos/fisera-alus.png",
+    "website": "https://fiseraalus.lv",
+    "description": "New craft brewery opened in Viesīte in May 2025 with a €400,000 investment, offering three lager varieties on-site alongside a bar, café, and guest house at the adjacent Biržu iela 4 visitor centre."
+  },
+  {
+    "id": "raiskuma-labumu-daritava",
+    "name": "Raiskuma labumu darītava",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Ozolu 3, Raiskums, Raiskuma pagasts, Cēsu novads, LV-4146",
+    "city": "Raiskums",
+    "region": "Vidzeme",
+    "lat": 57.31252,
+    "lng": 25.15393,
+    "coord_precision": "approx",
+    "founded": 2013,
+    "logo": "/logos/raiskuma-labumu-daritava.png",
+    "website": "https://www.raiskumietis.lv",
+    "description": "Farmhouse brewery and bakery trading as Raiskumietis, housed in a former manor barn near Cēsis, producing traditional light, dark, and cherry ales alongside wood-oven bread and alder-smoked meats."
+  },
+  {
+    "id": "dziru-kalve",
+    "name": "Dziru Kalve",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Liepu iela 3, Vecumnieki, Vecumnieku pagasts, Bauskas novads, LV-3933",
+    "city": "Vecumnieki",
+    "region": "Zemgale",
+    "lat": 56.60775,
+    "lng": 24.52924,
+    "coord_precision": "exact",
+    "founded": 2021,
+    "logo": "/logos/dziru-kalve.jpg",
+    "website": "https://www.facebook.com/p/Dziru-kalve-100092427874749/",
+    "description": "Nano-brewery founded in 2021 in Vecumnieki by two craft-beer enthusiasts, producing small-batch IPAs, stouts, sours, and other hop-forward styles."
+  },
+  {
+    "id": "windau-wines",
+    "name": "Windau Wines",
+    "types": [
+      "wine",
+      "cider"
+    ],
+    "status": "working",
+    "address": "Tirgus iela 8, Ventspils, LV-3601",
+    "city": "Ventspils",
+    "region": "Kurzeme",
+    "lat": 57.3968,
+    "lng": 21.56762,
+    "coord_precision": "exact",
+    "founded": 2016,
+    "logo": "/logos/windau-wines.webp",
+    "website": "https://windauwines.lv",
+    "description": "A family winery and cidery in the heart of Ventspils Market, crafting wines, ciders, and sparkling wines from locally gathered berries, birch sap, and wild Latvian ingredients since 2016."
+  },
+  {
+    "id": "vini-curlandia",
+    "name": "Vini Curlandia",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Ogulāji\", Rendas pagasts, Kuldīgas novads, LV-3319",
+    "city": "Renda",
+    "region": "Kurzeme",
+    "lat": 57.067,
+    "lng": 22.283,
+    "coord_precision": "approx",
+    "founded": null,
+    "logo": "/logos/vini-curlandia.jpg",
+    "website": "https://vinicurlandia.com",
+    "description": "Mārtiņš Vāgners revives a centuries-old Renda winemaking tradition at this Kurzeme vineyard, cultivating 16 Vitis vinifera varieties at one of northern Europe's most diverse grape gardens, with tastings and holiday accommodation."
+  },
+  {
+    "id": "pienjani",
+    "name": "Pienjāņi",
+    "types": [
+      "cider"
+    ],
+    "status": "working",
+    "address": "\"Pienjāņi\", Skaistkalnes pagasts, Bauskas novads, LV-3924",
+    "city": "Skaistkalne",
+    "region": "Zemgale",
+    "lat": 56.3654,
+    "lng": 24.6027,
+    "coord_precision": "approx",
+    "founded": 2009,
+    "logo": "",
+    "website": "https://www.jepis.lv",
+    "description": "Latvia's only certified organic cider producer, tending the country's largest apple orchard—nearly 40 hectares in Skaistkalnes pagasts—and selling artisan apple ciders under the Jēpis brand since 2021."
+  },
+  {
+    "id": "kaiminmuiza",
+    "name": "Kaimiņmuiža",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Kaimiņi\", Kandavas pagasts, Tukuma novads, LV-3120",
+    "city": "Kandava",
+    "region": "Kurzeme",
+    "lat": 57.02273,
+    "lng": 22.81854,
+    "coord_precision": "approx",
+    "founded": 2017,
+    "logo": "/logos/kaiminmuiza.jpg",
+    "website": "https://kaiminmuiza.lv",
+    "description": "A family winery established in 2017 in Kandava parish, growing six grape varieties across 2.5 hectares; tastings are offered at the nearby Kandava Wine House, and the 2021 Valiant wine earned Baltic Cup recognition."
+  },
+  {
+    "id": "lubanas-vinotava",
+    "name": "Lubānas vīnotava",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "Parka iela 6, Lubāna, Madonas novads, LV-4830",
+    "city": "Lubāna",
+    "region": "Vidzeme",
+    "lat": 56.9,
+    "lng": 26.717,
+    "coord_precision": "approx",
+    "founded": 2015,
+    "logo": "/logos/lubanas-vinotava.jpg",
+    "website": "https://www.vinotava.lv",
+    "description": "Winemaker Oskars Žvagins produces red, white, and sparkling wines from Latvian apples, rhubarb, and quince at this small family winery near Lubāna Manor, open for tastings and tours by advance arrangement."
+  },
+  {
+    "id": "kugrenu-vina-daritava",
+    "name": "Kugrēnu vīna darītava",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "Liepu iela 16, Uzvara, Gailīšu pagasts, Bauskas novads, LV-3931",
+    "city": "Uzvara",
+    "region": "Zemgale",
+    "lat": 56.31833,
+    "lng": 24.25611,
+    "coord_precision": "approx",
+    "founded": null,
+    "logo": "/logos/kugrenu-vina-daritava.jpg",
+    "website": "https://www.kugrenuvini.lv",
+    "description": "A small Zemgale winery in the former collective farm village of Uzvara, 12 km from Bauska, producing 16 varieties of naturally fermented fruit and berry wines from organically sourced Latvian ingredients."
+  },
+  {
+    "id": "smilskalni",
+    "name": "Smilškalnu Vīns (ZS Smilškalni)",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "Tehnikas iela 12, Kuldīga, Kuldīgas novads, LV-3301",
+    "city": "Kuldīga",
+    "region": "Kurzeme",
+    "lat": 56.97919,
+    "lng": 21.96656,
+    "coord_precision": "exact",
+    "founded": 2011,
+    "logo": "/logos/smilskalni.png",
+    "website": "https://www.smilskalni.lv/",
+    "description": "Berry wine producer in Kuldīga operating since 2011; makes fruit and berry wines from their own Kurmāle farm's raspberries, currants, sea buckthorn and aronia, offering group tastings by appointment."
+  },
+  {
+    "id": "mazburkas",
+    "name": "Mazburkas (SIA)",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Mazburkas\", Smārdes pagasts, Tukuma novads, LV-3129",
+    "city": "Smārde",
+    "region": "Kurzeme",
+    "lat": 56.94806,
+    "lng": 23.17695,
+    "coord_precision": "approx",
+    "founded": null,
+    "logo": "",
+    "website": "https://www.mazburkas.lv/",
+    "description": "Family vineyard in Smārdes pagasts growing about 60 grape varieties on south-facing slopes; produces award-winning white, rosé and dry red wines, with agritourism visits and tastings from May to November."
+  },
+  {
+    "id": "mazsalijas",
+    "name": "Mazsālijas",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Mazsālijas\", Snēpeles pagasts, Kuldīgas novads, LV-3328",
+    "city": "Snēpele",
+    "region": "Kurzeme",
+    "lat": 56.88216,
+    "lng": 21.93733,
+    "coord_precision": "approx",
+    "founded": null,
+    "logo": "/logos/mazsalijas.png",
+    "website": "https://mazsalijas.com/",
+    "description": "Certified organic estate near Kuldīga on the border of three parishes producing fruit, berry and grape wines from home-grown produce; also a guest house with countryside retreats and tastings."
+  },
+  {
+    "id": "tevinkalna",
+    "name": "Tēviņkalna vīna darītava",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Tēviņi\", Zemītes pagasts, Tukuma novads, LV-3135",
+    "city": "Zemīte",
+    "region": "Kurzeme",
+    "lat": 56.91761,
+    "lng": 22.83552,
+    "coord_precision": "exact",
+    "founded": 2014,
+    "logo": "/logos/tevinkalna.png",
+    "website": "https://tevinumajasvins.lv/",
+    "description": "Craft winery in Zemītes pagasts offering over 20 sulfite-free fruit and berry wines, a traditional-method sparkling raspberry wine and apple brandy aged in Latvian oak, founded 2014."
+  },
+  {
+    "id": "spilves",
+    "name": "Spilves vīna darītava",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Spilves\", Variešu pagasts, Jēkabpils novads, LV-5236",
+    "city": "Vārieši",
+    "region": "Zemgale",
+    "lat": 56.57618,
+    "lng": 26.09421,
+    "coord_precision": "approx",
+    "founded": null,
+    "logo": "/logos/spilves.svg",
+    "website": "https://www.spilves.lv/",
+    "description": "Forest wellness retreat in Jēkabpils novads with its own vineyard producing wine and brandies; guests enjoy vineyard walks, wine tastings, a black sauna and Ayurvedic massage."
+  },
+  {
+    "id": "ziemelu-vins",
+    "name": "Ziemeļu vīns (SIA)",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "Jaunā iela 15, Smiltene, Smiltenes novads, LV-4729",
+    "city": "Smiltene",
+    "region": "Vidzeme",
+    "lat": 57.4214,
+    "lng": 25.9063,
+    "coord_precision": "approx",
+    "founded": 2013,
+    "logo": "",
+    "website": "https://www.facebook.com/ZiemeluVins/",
+    "description": "Small licensed producer in Smiltene city centre fermenting fruit and berry wines from locally sourced Vidzeme ingredients, established 2013; one of Latvia's northernmost winery addresses."
+  },
+  {
+    "id": "vejkalnietis",
+    "name": "Vējkalnietis",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Mierkalni\", Lauciene, Laucienes pagasts, Talsu novads, LV-3285",
+    "city": "Lauciene",
+    "region": "Kurzeme",
+    "lat": 57.23059,
+    "lng": 22.73935,
+    "coord_precision": "exact",
+    "founded": 2010,
+    "logo": "/logos/vejkalnietis.png",
+    "website": "https://www.vejkalnietis.lv/",
+    "description": "Laucienes pagasts winery producing over 20 varieties of fruit, berry and grape wines plus distillates and liqueurs from exclusively local ingredients using double distillation, operating since 2010."
+  },
+  {
+    "id": "maa-studija",
+    "name": "MAA.studija",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Mednieki\", Kalvenes pagasts, Dienvidkurzemes novads, LV-3442",
+    "city": "Kalvene",
+    "region": "Kurzeme",
+    "lat": 56.5844,
+    "lng": 21.6208,
+    "coord_precision": "approx",
+    "founded": null,
+    "logo": "/logos/maa-studija.png",
+    "website": "https://maastudija.lv/",
+    "description": "Small family winery at the Mednieki homestead in south Kurzeme's Kalvenes pagasts, growing 700 grapevines and producing sparkling and dry red grape wines alongside rural accommodation."
+  },
+  {
+    "id": "rozleju-vina-daritava",
+    "name": "Rožleju vīna darītava",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "Rožlejas 71, Pleikšņi, Ozolaines pagasts, Rēzeknes novads, LV-4601",
+    "city": "Pleikšņi",
+    "region": "Latgale",
+    "lat": 56.48315,
+    "lng": 27.32215,
+    "coord_precision": "exact",
+    "founded": null,
+    "logo": "",
+    "website": "https://www.facebook.com/p/rozlejuvinadaritava-100093271573427/",
+    "description": "A family winery in Rēzeknes novads hand-crafting fruit and berry wines from local seasonal produce, with guided tours, tastings, and event hosting at the Rožlejas farm estate."
+  },
+  {
+    "id": "dzimtas-vins",
+    "name": "Dzimtas vīns",
+    "types": [
+      "wine",
+      "cider"
+    ],
+    "status": "working",
+    "address": "\"Dzimta\", Nagļi, Nagļu pagasts, Rēzeknes novads, LV-4631",
+    "city": "Nagļi",
+    "region": "Latgale",
+    "lat": 56.68496,
+    "lng": 26.92837,
+    "coord_precision": "exact",
+    "founded": 2021,
+    "logo": "",
+    "website": "https://dzimtasvins.lv",
+    "description": "Farm winery near Lake Lubāns run by gardener-winemaker Marta Igaune, producing fruit and berry wines and pear-apple ciders from her home orchard, with sales on-site the third Thursday of each month."
+  },
+  {
+    "id": "vina-cels",
+    "name": "Vīna ceļš",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "Vīndaru iela 12, Ikšķile, Ogres novads, LV-5052",
+    "city": "Ikšķile",
+    "region": "Vidzeme",
+    "lat": 56.82008,
+    "lng": 24.51735,
+    "coord_precision": "exact",
+    "founded": null,
+    "logo": "/logos/vina-cels.png",
+    "website": "https://www.vinacels.lv",
+    "description": "Ikšķile-based boutique winery by Normunds Labrencis producing sulphite-free Latvian berry and rhubarb wines under the motto 'less is more', with intimate tastings at the Libertu wine cellar by advance booking."
+  },
+  {
+    "id": "berga-vins",
+    "name": "Berga Vīns",
+    "types": [
+      "wine",
+      "cider"
+    ],
+    "status": "working",
+    "address": "\"Primenes\", Kocēnu pagasts, Valmieras novads, LV-4220",
+    "city": "Kocēni",
+    "region": "Vidzeme",
+    "lat": 57.53707,
+    "lng": 25.33621,
+    "coord_precision": "exact",
+    "founded": 2018,
+    "logo": "",
+    "website": "https://www.facebook.com/bergavins/",
+    "description": "A small family winery 10 km from Valmiera producing award-winning Latvian fruit and berry wines, ciders, and sparkling wines, with tastings and production tours available for groups of 4–20 people."
+  },
+  {
+    "id": "cirulisi",
+    "name": "Cīrulīši",
+    "types": [
+      "wine",
+      "cider"
+    ],
+    "status": "working",
+    "address": "\"Cīrulīši\", Kaltene, Rojas pagasts, Talsu novads, LV-3264",
+    "city": "Kaltene",
+    "region": "Kurzeme",
+    "lat": 57.45949,
+    "lng": 22.88057,
+    "coord_precision": "exact",
+    "founded": null,
+    "logo": "",
+    "website": "https://www.facebook.com/cirulisi/",
+    "description": "A Kaltene coastal homestead run by Gunta Rožkalne producing homemade berry and fruit wines and ciders alongside traditional smoked and marinated fish products, with advance-booking tastings near the Kurzeme shore."
+  },
+  {
+    "id": "jokas",
+    "name": "Jokas",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Jokas\", Limbažu pagasts, Limbažu novads, LV-4011",
+    "city": "Limbaži",
+    "region": "Vidzeme",
+    "lat": 57.48226,
+    "lng": 24.65403,
+    "coord_precision": "approx",
+    "founded": 2006,
+    "logo": "",
+    "website": "",
+    "description": "A small winery at Jokas homestead in Limbažu pagasts where Latvian-British winemaker Džons Brauns crafts some 30 varieties of berry, fruit, and botanical wines from local wild and cultivated plants, licensed for retail since 2010."
+  },
+  {
+    "id": "lemsel",
+    "name": "Lemsel",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "Vēja iela 18, Limbaži, Limbažu novads, LV-4001",
+    "city": "Limbaži",
+    "region": "Vidzeme",
+    "lat": 57.52229,
+    "lng": 24.72454,
+    "coord_precision": "exact",
+    "founded": 2015,
+    "logo": "",
+    "website": "",
+    "description": "A home berry wine producer in Limbaži crafting fruit wines named after Lemsel, the city's historic name, alongside apple-and-currant distillates and currant infusions, listed among the region's noted local producers."
+  },
+  {
+    "id": "vidusgrubas",
+    "name": "Vidusgrūbas",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Vidusgrūbas\", Vidrižu pagasts, Limbažu novads, LV-4013",
+    "city": "Vidriži",
+    "region": "Vidzeme",
+    "lat": 57.35957,
+    "lng": 24.65996,
+    "coord_precision": "exact",
+    "founded": 2018,
+    "logo": "",
+    "website": "",
+    "description": "Small farm winery in Vidrižu parish run by Daina Jankova since 2018; produces semi-sweet and semi-dry wines from home-grown currants, cherries, and raspberries alongside foraged lingonberries, cranberries, and dandelion flowers."
+  },
+  {
+    "id": "duminu-vina-daritava",
+    "name": "Dūmiņu vīna darītava",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "Zvaigžņu iela 10, Bauska, LV-3901",
+    "city": "Bauska",
+    "region": "Zemgale",
+    "lat": 56.42249,
+    "lng": 24.21227,
+    "coord_precision": "exact",
+    "founded": 2012,
+    "logo": "",
+    "website": "",
+    "description": "Award-winning urban winery in Bauska founded in 2012 by food technologist Ieva Dūmiņa; intimate cellar tastings present over 33 wines from local fruits and flowers, including rose petal, dandelion, and oak-leaf varieties — 2019 National Taste winner."
+  },
+  {
+    "id": "kauca-strauts",
+    "name": "Kauča strauts",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Visnoļi\", Īslīces pagasts, Bauskas novads, LV-3901",
+    "city": "Bauska",
+    "region": "Zemgale",
+    "lat": 56.35394,
+    "lng": 24.17936,
+    "coord_precision": "exact",
+    "founded": null,
+    "logo": "/logos/kauca-strauts.jpg",
+    "website": "https://www.facebook.com/kauciswinery/",
+    "description": "Rural Zemgale winery at the Visnoļi homestead in Īslīces parish near Bauska, also known as Kaucis Creek Winery; operated by Ģirts Miķelsons, producing fruit and grape wines with vineyard visits by arrangement."
+  },
+  {
+    "id": "dobeskalni",
+    "name": "Dobeskalni",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Dobeskalni\", Vītiņu pagasts, Dobeles novads, LV-3721",
+    "city": "Vītiņi",
+    "region": "Zemgale",
+    "lat": 56.50557,
+    "lng": 22.73914,
+    "coord_precision": "exact",
+    "founded": null,
+    "logo": "/logos/dobeskalni.png",
+    "website": "https://www.dobeskalni.lv/",
+    "description": "Scenic winery beside the ancient Mežakalns hillfort in Vītiņu parish, Dobele region; produces over 15 fruit and berry wine varieties from home-grown and wild-harvested produce, with year-round group tastings by prior booking."
+  },
+  {
+    "id": "abelites",
+    "name": "Ābelītes",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Ābelītes\", Zaļenieku pagasts, Jelgavas novads, LV-3011",
+    "city": "Zaļenieki",
+    "region": "Zemgale",
+    "lat": 56.47212,
+    "lng": 23.50087,
+    "coord_precision": "approx",
+    "founded": null,
+    "logo": "",
+    "website": "",
+    "description": "Family farm winery in Zaļenieku parish specialising in apple-based wines with seasonal berry additions including lingonberry, black currant, red currant, and raspberry; EU-funded production equipment supports quality output."
+  },
+  {
+    "id": "drubazas",
+    "name": "Drubazas",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Drubazas\", Abavas pagasts, Talsu novads, LV-3294",
+    "city": "Sabile",
+    "region": "Kurzeme",
+    "lat": 57.03034,
+    "lng": 22.59508,
+    "coord_precision": "exact",
+    "founded": 2011,
+    "logo": "/logos/drubazas.jpg",
+    "website": "https://www.facebook.com/drubazasvins",
+    "description": "Kurzeme family farm winery on the Abava River managed by the Dzērve family since 2011; produces around 1,000 litres annually from 10 Latvian grape varieties and seasonal fruits — including Latvia's first pumpkin wine."
+  },
+  {
+    "id": "dzidris",
+    "name": "Mājas vīna darītava \"Dzidris\"",
+    "types": [
+      "wine",
+      "cider"
+    ],
+    "status": "working",
+    "address": "\"Ozoliņi\", Aiviekstes pagasts, Aizkraukles novads, LV-5121",
+    "city": "Aiviekstes",
+    "region": "Vidzeme",
+    "lat": 56.62668,
+    "lng": 25.8694,
+    "coord_precision": "approx",
+    "founded": 2005,
+    "logo": "",
+    "website": "http://www.dzidris.lv/",
+    "description": "Multi-generational family winery at the 1910-built Ozoliņi farmstead in Aiviekstes parish; licensed since 2005, brothers Oskars and Viktors craft apple, rhubarb, and currant wines and cider through a two-year natural production cycle."
+  },
+  {
+    "id": "kaspari",
+    "name": "Kaspari",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "\"Tumes pasts\", Tume, Tumes pagasts, Tukuma novads, LV-3139",
+    "city": "Tume",
+    "region": "Kurzeme",
+    "lat": 56.93743,
+    "lng": 23.08867,
+    "coord_precision": "approx",
+    "founded": 2004,
+    "logo": "/logos/kaspari.png",
+    "website": "https://www.majasvinikaspari.lv/",
+    "description": "Kurzeme fruit farm and apiary near Tume village producing over 22 fruit and berry wine varieties using eco-friendly methods; gooseberry, raspberry, and cherry dessert wines are local favourites, with tastings available by arrangement."
+  },
+  {
+    "id": "rankas-vins",
+    "name": "Rankas Vīns",
+    "types": [
+      "wine",
+      "cider"
+    ],
+    "status": "working",
+    "address": "\"Gaujaslīči\", Rankas pagasts, Gulbenes novads, LV-4416",
+    "city": "Ranka",
+    "region": "Vidzeme",
+    "lat": 57.21335,
+    "lng": 26.15347,
+    "coord_precision": "approx",
+    "founded": null,
+    "logo": "/logos/rankas-vins.png",
+    "website": "https://www.latvijasvini.lv/",
+    "description": "Vidzeme forest berry winery in Rankas parish producing about 20 naturally fermented wines aged at least 36 months without additives, alongside the Meža Ogu Sidrs forest berry cider, all crafted from hand-picked wild Latvian berries."
+  },
+  {
+    "id": "elku",
+    "name": "Elku",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "Centra aleja 20, Lubezere, Ārlavas pag., Talsu novads, LV-3330",
+    "city": "Lubezere",
+    "region": "Kurzeme",
+    "lat": 57.41306,
+    "lng": 22.62603,
+    "coord_precision": "exact",
+    "founded": null,
+    "logo": "",
+    "website": "https://www.pikolo.lv",
+    "description": "Award-winning berry and fruit wine producer in Kurzeme, offering tastings of carefully crafted wines, liqueurs, and spirits made from locally grown strawberries and quince."
   }
 ]
