@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MUCA - Latvian Breweries Map · beer, cider &amp; wine</title>
+  <meta name="description" content="An interactive map of Latvian beer breweries, cideries and wineries - addresses, status and details for makers across Latvia." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Schibsted+Grotesk:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" x-data="muca" x-cloak
+       :data-mode="dark ? 'dark' : 'light'"
+       :class="{ 'detail-open': selectedId }"
+       data-mode="light" data-tone="porcelain" data-density="compact" data-look="editorial"
+       @keydown.escape.window="onEscape()">
+
+    <header class="hd">
+      <div class="hd-brand">
+        <span class="hd-mark">MUCA<span class="dot">.</span></span>
+        <span class="hd-sub">Latvian beer · cider · wine</span>
+      </div>
+      <div class="hd-spacer"></div>
+
+      <div class="seg" role="tablist">
+        <template x-for="f in filters" :key="f.key">
+          <button :data-on="filter === f.key ? '1' : '0'" @click="filter = f.key">
+            <span class="swatch" x-show="f.key !== 'all'" :style="`background:var(--c-${f.key})`"></span>
+            <span class="label" x-text="f.label"></span>
+            <span class="count" x-text="countFor(f.key)"></span>
+          </button>
+        </template>
+      </div>
+
+      <div class="hd-tools">
+        <button class="toggle-defunct" @click="hideDefunct = !hideDefunct">
+          <span class="switch" :data-on="hideDefunct ? '1' : '0'"><i></i></span>
+          <span class="t-label">Hide defunct</span>
+        </button>
+        <button class="hd-about" @click="aboutOpen = true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 7.6v.05"/></svg>
+          <span class="t-label">About</span>
+        </button>
+        <button class="icon-btn" title="Toggle light / dark" aria-label="Toggle theme"
+                @click="dark = !dark" x-html="icon(dark ? 'sun' : 'moon')"></button>
+      </div>
+    </header>
+
+    <div class="body">
+      <aside class="side">
+        <!-- data load error (replaces the list) -->
+        <template x-if="error">
+          <div class="empty" style="margin-top:40px">
+            <div class="big">Could not load data</div>
+            <div>breweries.json failed to load.<br /><small x-text="error"></small></div>
+          </div>
+        </template>
+
+        <div class="side-search" x-show="!error">
+          <label class="search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+            <input type="search" placeholder="Search makers, towns…" spellcheck="false" autocomplete="off" x-model="query" />
+          </label>
+        </div>
+        <div class="side-meta" x-show="!error">
+          <span>Showing</span><span class="n" x-text="`${items.length} / ${data.length}`"></span>
+        </div>
+        <div class="list" x-show="!error">
+          <template x-if="items.length === 0">
+            <div class="empty"><div class="big">No makers found</div><div>Try a different search or filter.</div></div>
+          </template>
+          <template x-for="b in items" :key="b.id">
+            <button class="card" :class="{ 'is-defunct': isDefunct(b) }"
+                    :data-id="b.id" :data-active="b.id === selectedId ? '1' : '0'"
+                    :style="`--cat:var(--c-${b.types[0]})`" @click="select(b.id, true)">
+              <span class="card-glyphs">
+                <template x-for="t in b.types" :key="t">
+                  <span class="card-glyph" :style="`--cat:var(--c-${t})`" x-html="catIcon(t)"></span>
+                </template>
+              </span>
+              <span class="card-body">
+                <span class="card-name">
+                  <span class="nm" x-text="b.name"></span>
+                  <template x-if="isDefunct(b)"><span class="tag-defunct">Defunct</span></template>
+                </span>
+                <span class="card-tag" x-text="tagline(b)"></span>
+                <span class="card-foot">
+                  <span class="reg" x-text="b.region"></span>
+                  <template x-if="b.founded"><span class="dot-sep"></span></template>
+                  <template x-if="b.founded"><span x-text="`est. ${b.founded}`"></span></template>
+                </span>
+              </span>
+            </button>
+          </template>
+        </div>
+
+        <template x-if="selected">
+          <div class="detail" :style="`--cat:var(--c-${selected.types[0]})`">
+            <div class="dt-hero">
+              <button class="dt-back" @click="deselect()">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6l-6 6 6 6"/></svg> All makers
+              </button>
+              <template x-if="selected.logo">
+                <div class="dt-logo">
+                  <img :src="selected.logo" :alt="`${selected.name} logo`" loading="lazy"
+                       @error="$el.parentElement.style.display = 'none'" />
+                </div>
+              </template>
+              <div class="dt-cats">
+                <template x-for="t in selected.types" :key="t">
+                  <span class="dt-cat" :style="`--cat:var(--c-${t})`"><span class="swatch"></span><span x-text="TYPE_LABEL[t] || ''"></span></span>
+                </template>
+              </div>
+              <h2 class="dt-name" x-text="selected.name"></h2>
+              <div class="dt-town">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.3-6.5-10.5a6.5 6.5 0 0 1 13 0C18.5 15.7 12 21 12 21Z"/><circle cx="12" cy="10.5" r="2.3"/></svg>
+                <span x-text="townLine(selected)"></span>
+              </div>
+              <div class="dt-badges">
+                <span class="badge" :class="isDefunct(selected) ? 'is-off' : 'is-on'">
+                  <span class="d"></span><span x-text="isDefunct(selected) ? 'Defunct' : 'Operating'"></span>
+                </span>
+                <template x-if="selected.founded"><span class="badge-soft" x-text="`est. ${selected.founded}`"></span></template>
+              </div>
+            </div>
+
+            <div class="dt-section"><p class="dt-blurb" x-text="selected.description"></p></div>
+
+            <div class="dt-section">
+              <h4>Details</h4>
+              <div class="dt-info">
+                <div class="info">
+                  <div class="info-k">Address</div>
+                  <div class="info-row">
+                    <div class="info-v" x-text="selected.address"></div>
+                    <button class="info-copy" :data-copied="copied === 'addr' ? '1' : '0'"
+                            @click="copy('addr', selected.address)" x-html="copyInner('addr')"></button>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="info-k">Coordinates</div>
+                  <div class="info-row">
+                    <div class="info-v mono"><span x-text="coordsOf(selected)"></span><span class="info-sub" x-text="` · ${precisionOf(selected)}`"></span></div>
+                    <button class="info-copy" :data-copied="copied === 'coords' ? '1' : '0'"
+                            @click="copy('coords', coordsOf(selected))" x-html="copyInner('coords')"></button>
+                  </div>
+                </div>
+                <template x-if="selected.website">
+                  <div class="info">
+                    <div class="info-k">Website</div>
+                    <div class="info-row">
+                      <a class="info-v info-link" :href="selected.website" target="_blank" rel="noopener noreferrer">
+                        <span x-text="hostOf(selected.website)"></span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-8.5 8.5"/><path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg>
+                      </a>
+                    </div>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </div>
+        </template>
+      </aside>
+
+      <main class="map" x-ref="map">
+        <div class="map-error" x-show="mapError" x-cloak>
+          <div class="big">The map couldn’t be loaded.</div>
+          <div x-text="mapError"></div>
+        </div>
+      </main>
+    </div>
+
+    <div class="about-overlay" x-show="aboutOpen" x-cloak x-transition.opacity
+         @mousedown.self="aboutOpen = false">
+      <div class="about-card" role="dialog" aria-modal="true" aria-label="About MUCA">
+        <button class="about-x" aria-label="Close" @click="aboutOpen = false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+        <div class="about-body">
+          <div class="about-head">
+            <h3>About MUCA</h3>
+            <p>An interactive map of Latvian beer breweries, cideries and wineries.</p>
+          </div>
+          <p class="about-note">MUCA is part of the <a href="https://didnt.work">didnt.work</a> family of small apps made by <a href="https://laacz.lv">Kaspars Foigts</a>.</p>
+          <p class="about-contact">Spotted a maker to add, a correction, or just want to say hello?<br />
+            <a class="about-link" href="mailto:apps@didnt.work?subject=%5BMUCA%5D">apps@didnt.work</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="app.js"></script>
+  <script src="vendor/alpine/alpine.min.js" defer></script>
+</body>
+</html>
