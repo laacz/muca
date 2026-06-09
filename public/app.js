@@ -16,6 +16,7 @@
   // Icons (24×24 stroke) - only the ones JS builds dynamically; static icons
   //    are inlined in index.php.
   const ICONS = {
+    barrel: '<path d="M7 3h10c2.2 2.7 2.2 15.3 0 18H7c-2.2-2.7-2.2-15.3 0-18Z"/><path d="M12 3v18"/><path d="M5.6 7.5c4.2 1.5 8.6 1.5 12.8 0M5.6 15.5c4.2 1.5 8.6 1.5 12.8 0"/>',
     beer: '<path d="M6 8h9v9a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V8Z"/><path d="M15 10h2.5a2.5 2.5 0 0 1 0 5H15"/><path d="M7.5 8c-.4-2 .6-3.4 2.2-3.4.6-1.3 2.3-1.6 3.2-.6 1.6-.4 2.7.7 2.4 2.3"/>',
     cider: '<path d="M12 7c-3 0-5 2.2-5 6 0 4 2.4 7 5 7s5-3 5-7c0-3.8-2-6-5-6Z"/><path d="M12 7c0-1.6.8-3 2.5-3.6"/>',
     wine: '<path d="M7 3h10l-.6 5.5a4.4 4.4 0 0 1-8.8 0L7 3Z"/><path d="M12 14v5"/><path d="M8.5 19h7"/>',

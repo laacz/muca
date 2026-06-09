@@ -136,6 +136,7 @@ button { font-family: inherit; cursor: pointer; }
   z-index: 30;
 }
 .hd-brand { display: flex; align-items: baseline; gap: 12px; user-select: none; }
+.hd-logo { width: 26px; height: 26px; align-self: center; flex: none; color: var(--ink); }
 .hd-mark {
   font-family: var(--font-display);
   font-weight: 700; font-size: 25px; letter-spacing: .14em;
