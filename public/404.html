@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 · MUCA - Latvian Breweries Map</title>
+  <meta name="robots" content="noindex" />
+
+  <link rel="icon" type="image/svg+xml" href="/barrel.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --accent: #9E3039;
+      --bg: #ededec; --surface: #ffffff;
+      --ink: #14161a; --ink-2: #565c66; --ink-3: #8b919b;
+      --line: #e6e6e4; --line-2: #d8d8d5;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f0f10; --surface: #171718;
+        --ink: #eef1f5; --ink-2: #98a0ab; --ink-3: #5d646f;
+        --line: #262627; --line-2: #313133;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    body {
+      min-height: 100dvh;
+      display: grid; grid-template-rows: auto 1fr;
+      background: var(--bg); color: var(--ink);
+      font-family: "Hanken Grotesk", system-ui, sans-serif;
+    }
+    a { color: inherit; }
+
+    .hd { display: flex; align-items: center; gap: 10px; padding: 18px 22px; user-select: none; }
+    .hd a { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .hd svg { width: 24px; height: 24px; }
+    .hd-mark {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 700; font-size: 21px; letter-spacing: .14em; line-height: 1;
+    }
+    .hd-mark .dot { color: var(--accent); }
+
+    main {
+      display: grid; place-items: center;
+      padding: 24px 22px 9vh; text-align: center;
+    }
+    .barrel { width: 96px; height: 96px; color: var(--ink); transform: rotate(104deg); margin-bottom: 10px; }
+    .code {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 700; font-size: clamp(64px, 14vw, 112px);
+      letter-spacing: .1em; line-height: 1.05;
+    }
+    .code .dot { color: var(--accent); }
+    .proverb {
+      font-family: "Space Grotesk", system-ui, sans-serif;
+      font-weight: 600; font-size: clamp(19px, 3.2vw, 24px);
+      margin-top: 18px;
+    }
+    .gloss { color: var(--ink-2); font-size: 15px; margin-top: 8px; max-width: 44ch; }
+    .back {
+      display: inline-flex; align-items: center; gap: 8px;
+      margin-top: 34px; padding: 11px 20px;
+      border: 1px solid var(--line-2); border-radius: 999px;
+      background: var(--surface); text-decoration: none;
+      font-weight: 600; font-size: 14px; letter-spacing: .02em;
+    }
+    .back:hover { border-color: var(--ink-3); }
+    .back svg { width: 17px; height: 17px; }
+  </style>
+</head>
+<body>
+  <header class="hd">
+    <a href="/">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10c2.2 2.7 2.2 15.3 0 18H7c-2.2-2.7-2.2-15.3 0-18Z"/><path d="M12 3v18"/><path d="M5.6 7.5c4.2 1.5 8.6 1.5 12.8 0M5.6 15.5c4.2 1.5 8.6 1.5 12.8 0"/></svg>
+      <span class="hd-mark">MUCA<span class="dot">.</span></span>
+    </a>
+  </header>
+
+  <main>
+    <div>
+      <svg class="barrel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10c2.2 2.7 2.2 15.3 0 18H7c-2.2-2.7-2.2-15.3 0-18Z"/><path d="M12 3v18"/><path d="M5.6 7.5c4.2 1.5 8.6 1.5 12.8 0M5.6 15.5c4.2 1.5 8.6 1.5 12.8 0"/></svg>
+      <div class="code">4<span class="dot">0</span>4</div>
+      <p class="proverb" lang="lv">Tukša muca tālu skan.</p>
+      <p class="gloss">“An empty barrel sounds the farthest” — and this one is empty.
+        The page you're after isn't here.</p>
+      <a class="back" href="/">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 6l-6 6 6 6"/></svg>
+        Back to the map
+      </a>
+    </div>
+  </main>
+</body>
+</html>
