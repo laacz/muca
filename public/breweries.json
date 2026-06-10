@@ -1226,7 +1226,7 @@
     "types": [
       "beer"
     ],
-    "status": "working",
+    "status": "defunct",
     "address": "Skārņu iela 9, Rīga, LV-1050",
     "city": "Rīga",
     "region": "Rīga",
@@ -1236,7 +1236,8 @@
     "founded": null,
     "logo": "/logos/peters-brewhouse.jpg",
     "website": "https://www.facebook.com/petersbrewhouse/",
-    "description": "Old Town Rīga's only in-house restaurant brewery, steps from St. Peter's Church, brewing light, dark and red lagers on the premises and serving them alongside traditional Latvian and German cuisine."
+    "description": "Once Old Town Rīga's only in-house restaurant brewery, steps from St. Peter's Church, brewing light, dark and red lagers on the premises and serving them alongside traditional Latvian and German cuisine. The brewing kettles are long gone and in-house brewing has ended.",
+    "note": "The restaurant itself is still open, but it no longer brews - the beers on tap now come from other Latvian and foreign breweries."
   },
   {
     "id": "stargorod-riga",
@@ -2074,5 +2075,41 @@
     "logo": "/logos/migla.png",
     "website": "https://alusmigla.lv",
     "description": "Family-run nano-brewery (SIA Līduma alus) at the Annas homestead in Uzvaras Līdums near Jaunolaine, opened in April 2022 with LEADER programme support. Brews small 250-litre batches of traditional styles in modern interpretations, with the whole family - including a beer sommelier daughter - involved in recipe development."
+  },
+  {
+    "id": "aluksnes-alus",
+    "name": "Alūksnes alus",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Tālavas iela 5, Alūksne, LV-4301",
+    "city": "Alūksne",
+    "region": "Vidzeme",
+    "lat": 57.41259,
+    "lng": 27.04392,
+    "coord_precision": "exact",
+    "founded": 2020,
+    "logo": "/logos/aluksnes-alus.jpg",
+    "website": "https://www.facebook.com/aluksnesalus/",
+    "description": "Small craft brewery brewing in Alūksne since 2020, since summer 2023 housed in the Alūksne Business Station at Tālavas iela 5, where an on-site tasting room pairs its beers with live music and a creative atmosphere."
+  },
+  {
+    "id": "bruzis-murza",
+    "name": "Brūzis Murza",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "\"Zaļmuiža\", Murāni, Andrupenes pagasts, Krāslavas novads, LV-5687",
+    "city": "Murāni",
+    "region": "Latgale",
+    "lat": 56.12311,
+    "lng": 27.45267,
+    "coord_precision": "exact",
+    "founded": 2021,
+    "logo": "/logos/bruzis-murza.jpg",
+    "website": "https://www.bruzismurza.lv/",
+    "description": "Family-run microbrewery opened in 2021 by the Gekišu family in a renovated barn at their ancestral Zaļmuiža homestead in Andrupene parish, brewing unfiltered, unpasteurised ale-style beers from deep-well groundwater, with brewery tours and tastings by prior appointment."
   }
 ]
