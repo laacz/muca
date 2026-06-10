@@ -258,6 +258,14 @@ button { font-family: inherit; cursor: pointer; }
   font: inherit; font-size: 14px; color: var(--ink);
 }
 .search input::placeholder { color: var(--ink-3); }
+.search-keys { display: flex; gap: 4px; flex: none; }
+.search-keys kbd {
+  font: 500 10.5px/1 var(--font-mono); color: var(--ink-3);
+  background: var(--surface); border: 1px solid var(--line); border-bottom-width: 2px;
+  border-radius: 5px; padding: 3px 5px 4px;
+}
+.search input:focus ~ .search-keys,
+.search input:not(:placeholder-shown) ~ .search-keys { display: none; }
 
 .side-meta {
   display: flex; align-items: center; justify-content: space-between;

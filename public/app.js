@@ -53,6 +53,8 @@
         filters: FILTERS,
         TYPE_LABEL: TYPE_LABEL,
 
+        kbdK: /Mac|iP(hone|ad|od)/.test(navigator.platform) ? "⌘K" : "Ctrl K",
+
         // reactive UI state
         dark: loadDark(),
         filter: "all",
