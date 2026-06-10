@@ -1204,7 +1204,7 @@
     "types": [
       "beer"
     ],
-    "status": "working",
+    "status": "defunct",
     "address": "Lāčplēša iela 12, Rīga, LV-1010",
     "city": "Rīga",
     "region": "Rīga",
@@ -1214,7 +1214,7 @@
     "founded": null,
     "logo": "/logos/alkimikis.jpg",
     "website": "https://www.facebook.com/AlkimikisAlus/",
-    "description": "Craft brewpub on Rīga's craft-beer street, housed in a charming historic wooden building where over 15 rotating seasonal styles-from rhubarb IPAs to coffee stouts-are brewed and poured on-site."
+    "description": "Craft brewpub on Rīga's craft-beer street, housed in a charming historic wooden building, where over 15 rotating seasonal styles from rhubarb IPAs to coffee stouts were brewed and poured on-site. Now permanently closed."
   },
   {
     "id": "peters-brewhouse",
@@ -1942,5 +1942,77 @@
     "logo": "/logos/mazjuras-bruzis.jpg",
     "website": "https://www.facebook.com/mazjurasbruzis",
     "description": "The first and only brewery in the seaside fishing village of Engure, opened in 2023. Brews Angern Lager and Angern Dark Lager - named after the Livonian word for eels and the historic name of Engure - plus a warm spiced 'hot beer', with a taproom serving wine and local delicacies."
+  },
+  {
+    "id": "varpa",
+    "name": "Rīgas alus darītava Vārpa",
+    "types": [
+      "beer"
+    ],
+    "status": "defunct",
+    "address": "Latgales iela 231, Rīga, LV-1019",
+    "city": "Rīga",
+    "region": "Rīga",
+    "lat": 56.92855,
+    "lng": 24.16625,
+    "coord_precision": "exact",
+    "founded": 1865,
+    "logo": "",
+    "website": "",
+    "description": "Historic brewery founded in 1865 in Riga's Maskavas forštate district. Declared insolvent in 2004 and liquidated; the abandoned buildings on Latgales (formerly Maskavas) iela later suffered fires and remain derelict."
+  },
+  {
+    "id": "liepajas-alus",
+    "name": "Liepājas alus",
+    "types": [
+      "beer"
+    ],
+    "status": "defunct",
+    "address": "Liepāja",
+    "city": "Liepāja",
+    "region": "Kurzeme",
+    "lat": 56.5113,
+    "lng": 21.0139,
+    "coord_precision": "approx",
+    "founded": null,
+    "logo": "",
+    "website": "",
+    "description": "The old city brewery of Liepāja with roots in the 19th century. Beer production stopped in the late 1990s, leaving Lejaskurzeme without a brewery until Līvu alus opened in 2000, and the successor company on the site went bankrupt in mid 2007. The brand lives on and is now brewed in Lithuania."
+  },
+  {
+    "id": "lacplesa-alus",
+    "name": "Lāčplēša alus darītava",
+    "types": [
+      "beer"
+    ],
+    "status": "defunct",
+    "address": "Raiņa iela 48, Lielvārde, Ogres novads, LV-5070",
+    "city": "Lielvārde",
+    "region": "Vidzeme",
+    "lat": 56.71298,
+    "lng": 24.82972,
+    "coord_precision": "exact",
+    "founded": 1948,
+    "logo": "",
+    "website": "",
+    "description": "Brewery of the legendary kolhozs Lāčplēsis in Lielvārde, where beer was first brewed for Līgo in 1948. Royal Unibrew moved production to Liepāja in 2008 and the Lielvārde plant closed. The brand lives on and is now brewed in Lithuania."
+  },
+  {
+    "id": "gulbenes-alus",
+    "name": "Gulbenes alus darītava",
+    "types": [
+      "beer"
+    ],
+    "status": "defunct",
+    "address": "Dzirnavu iela 1, Gulbene, Gulbenes novads, LV-4401",
+    "city": "Gulbene",
+    "region": "Vidzeme",
+    "lat": 57.16197,
+    "lng": 26.75469,
+    "coord_precision": "exact",
+    "founded": 1882,
+    "logo": "",
+    "website": "",
+    "description": "Brewing in Gulbene dates to 1882, with the interwar enterprise known as the Vecgulbenes brewery. The brewery ran out of working capital during the financial crisis, stopped production in 2009 and was later liquidated."
   }
 ]
