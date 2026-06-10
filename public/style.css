@@ -252,7 +252,9 @@ button { font-family: inherit; cursor: pointer; }
 .search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 14%, transparent); }
 .search svg { width: 17px; height: 17px; color: var(--ink-3); flex: none; }
 .search input {
-  flex: 1; border: 0; background: transparent; outline: none;
+  /* min-width: 0 beats the ~20ch default intrinsic width, so the input shrinks
+     instead of pushing the shortcut hints out of the box in a narrow sidebar */
+  flex: 1; min-width: 0; border: 0; background: transparent; outline: none;
   font: inherit; font-size: 14px; color: var(--ink);
 }
 .search input::placeholder { color: var(--ink-3); }
