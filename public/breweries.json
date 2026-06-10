@@ -1924,5 +1924,23 @@
     "logo": "/logos/prusaks.jpg",
     "website": "https://www.facebook.com/prusaksalus",
     "description": "Craft nano-brewery in a small courtyard in Majori, central Jūrmala, brewing since 2022. Alongside balanced lagers, ales and IPAs it makes experimental brews like tomato-chili gose, plus mead and seltzers, with artist-designed labels and brewery tours with tastings."
+  },
+  {
+    "id": "mazjuras-bruzis",
+    "name": "Mazjūras Brūzis",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Jūras iela 73, Engure, Engures pagasts, Tukuma novads, LV-3113",
+    "city": "Engure",
+    "region": "Kurzeme",
+    "lat": 57.15891,
+    "lng": 23.22904,
+    "coord_precision": "exact",
+    "founded": 2023,
+    "logo": "/logos/mazjuras-bruzis.jpg",
+    "website": "https://www.facebook.com/mazjurasbruzis",
+    "description": "The first and only brewery in the seaside fishing village of Engure, opened in 2023. Brews Angern Lager and Angern Dark Lager — named after the Livonian word for eels and the historic name of Engure — plus a warm spiced 'hot beer', with a taproom serving wine and local delicacies."
   }
 ]
