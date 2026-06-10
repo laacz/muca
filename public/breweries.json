@@ -252,7 +252,7 @@
     "founded": 1916,
     "logo": "/logos/madonas-alus.jpg",
     "website": "https://madonasalus.com",
-    "description": "A historic brewery operating at its ancestral Bodnieki estate since 1916, producing traditional light, dark and honey beers while preserving time-honoured methods."
+    "description": "A historic brewery operating at its ancestral Bodnieki estate since 1916, producing traditional light, dark and honey beers while preserving time-honoured methods. Note: the retail 'Madonas' beer brand and the Bodnieki visual identity have been registered to Cido Grupa (Royal Unibrew) since 2016-2017, and all store-bought Madonas beer is brewed in Lithuania - no retail beer is produced locally; only beer served on-site at Bodnieki is brewed in Latvia."
   },
   {
     "id": "odzienas-muizas-alus",
@@ -426,9 +426,9 @@
     "address": "Ganību iela 9/11, Liepāja, LV-3401",
     "city": "Liepāja",
     "region": "Kurzeme",
-    "lat": 56.5245,
-    "lng": 21.0247,
-    "coord_precision": "approx",
+    "lat": 56.51083,
+    "lng": 21.02417,
+    "coord_precision": "exact",
     "founded": 2000,
     "logo": "/logos/livu-alus.jpg",
     "website": "",
@@ -2032,5 +2032,41 @@
     "logo": "/logos/bartas-alus.jpg",
     "website": "https://www.facebook.com/BartasAlus/",
     "description": "Small countryside brewery in the village of Bārta in Dienvidkurzeme, reviving the local brewing tradition of the Bārta cultural space. The beer is made from local malt, brewed over a real fire, unfiltered and unpasteurized, with brewery tours and tastings on request."
+  },
+  {
+    "id": "lido-alus-daritava",
+    "name": "LIDO alus darītava",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Krasta iela 76, Rīga, LV-1019",
+    "city": "Rīga",
+    "region": "Rīga",
+    "lat": 56.92718,
+    "lng": 24.16025,
+    "coord_precision": "exact",
+    "founded": 1999,
+    "logo": "/logos/lido.png",
+    "website": "https://www.lido.lv",
+    "description": "Brewery in the beer cellar of the LIDO Recreation Centre on Krasta iela, brewing since 27 July 1999. Produces around 900 litres of unfiltered beer daily, piped straight from the tanks through long 'python' lines to the centre's bars, with the brewing process visible to visitors."
+  },
+  {
+    "id": "migla",
+    "name": "Alus darītava MIGLA",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "\"Annas\", Uzvaras Līdums, Olaines pagasts, Olaines novads, LV-2127",
+    "city": "Uzvaras Līdums",
+    "region": "Zemgale",
+    "lat": 56.76939,
+    "lng": 23.8703,
+    "coord_precision": "exact",
+    "founded": 2022,
+    "logo": "/logos/migla.png",
+    "website": "https://alusmigla.lv",
+    "description": "Family-run nano-brewery (SIA Līduma alus) at the Annas homestead in Uzvaras Līdums near Jaunolaine, opened in April 2022 with LEADER programme support. Brews small 250-litre batches of traditional styles in modern interpretations, with the whole family - including a beer sommelier daughter - involved in recipe development."
   }
 ]
