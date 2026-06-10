@@ -76,7 +76,7 @@
           return this.data
             .filter((b) => this.filter === "all" || b.types.includes(this.filter))
             .filter((b) => !(this.hideDefunct && this.isDefunct(b)))
-            .filter((b) => !q || [b.name, b.city, b.region, b.description].join(" ").toLowerCase().includes(q))
+            .filter((b) => !q || [b.name, b.city, b.region, b.description, b.note || ""].join(" ").toLowerCase().includes(q))
             .sort((a, b) => (this.isDefunct(a) - this.isDefunct(b)) || a.name.localeCompare(b.name));
         },
         get selected() {

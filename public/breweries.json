@@ -16,7 +16,8 @@
     "founded": 1865,
     "logo": "/logos/aldaris.png",
     "website": "https://aldaris.lv",
-    "description": "Latvia's largest industrial brewery, founded in 1865 and now owned by the Carlsberg Group, in the historic Sarkandaugava district of Riga. The site also houses the Aldaris Beer Museum."
+    "description": "Latvia's largest industrial brewery, founded in 1865 and now owned by the Carlsberg Group, in the historic Sarkandaugava district of Riga. The site also houses the Aldaris Beer Museum.",
+    "note": "A number of Aldaris and Mežpils retail beers are brewed at Carlsberg group plants in Estonia or Lithuania - check the country of origin on the label."
   },
   {
     "id": "bauskas-alus",
@@ -53,7 +54,8 @@
     "founded": 1590,
     "logo": "/logos/cesu-alus.svg",
     "website": "https://www.cesualus.lv",
-    "description": "Brewing on Aldaru laukums (Brewers' Square) in Cēsis dates to 1590, making it one of the oldest breweries in the Baltics. Now owned by the Finnish Olvi Group and one of Latvia's largest beer producers."
+    "description": "Brewing on Aldaru laukums (Brewers' Square) in Cēsis dates to 1590, making it one of the oldest breweries in the Baltics. Now owned by the Finnish Olvi Group and one of Latvia's largest beer producers.",
+    "note": "Most Cēsu beer is brewed in Cēsis, but some products (e.g. the Solveza line, certain light variants) come from Olvi group plants in Estonia or Poland - check the country of origin on the label."
   },
   {
     "id": "labietis",
@@ -252,7 +254,8 @@
     "founded": 1916,
     "logo": "/logos/madonas-alus.jpg",
     "website": "https://madonasalus.com",
-    "description": "A historic brewery operating at its ancestral Bodnieki estate since 1916, producing traditional light, dark and honey beers while preserving time-honoured methods. Note: the nationally distributed 'Madonas' retail brand and the Bodnieki visual identity have been registered to Cido Grupa (Royal Unibrew) since 2016-2017, and that supermarket beer is brewed in Lithuania. The Bodnieki brewery itself still brews on-site for its restaurant, tastings and local sales, including a braggot available only on the premises."
+    "description": "A historic brewery operating at its ancestral Bodnieki estate since 1916, producing traditional light, dark and honey beers while preserving time-honoured methods. The brewery still brews on-site for its restaurant, tastings and local sales, including a braggot available only on the premises.",
+    "note": "The nationally distributed 'Madonas' retail brand belongs to Cido Grupa (Royal Unibrew) and that supermarket beer is brewed in Lithuania - only beer bought at Bodnieki itself is brewed here."
   },
   {
     "id": "odzienas-muizas-alus",
@@ -432,7 +435,8 @@
     "founded": 2000,
     "logo": "/logos/livu-alus.jpg",
     "website": "",
-    "description": "A large regional lager brewery built in 2000 in Liepāja and later owned by Cido Grupa. Beer production permanently ceased in June 2020 and the facility was sold."
+    "description": "A large regional lager brewery built in 2000 in Liepāja and later owned by Cido Grupa. Beer production permanently ceased in June 2020 and the facility was sold.",
+    "note": "The Līvu brand lives on under Cido Grupa (Royal Unibrew) and is now brewed in Lithuania."
   },
   {
     "id": "lodina-alus",
@@ -1977,7 +1981,8 @@
     "founded": null,
     "logo": "",
     "website": "",
-    "description": "The old city brewery of Liepāja with roots in the 19th century. Beer production stopped in the late 1990s, leaving Lejaskurzeme without a brewery until Līvu alus opened in 2000, and the successor company on the site went bankrupt in mid 2007. The brand lives on and is now brewed in Lithuania."
+    "description": "The old city brewery of Liepāja with roots in the 19th century. Beer production stopped in the late 1990s, leaving Lejaskurzeme without a brewery until Līvu alus opened in 2000, and the successor company on the site went bankrupt in mid 2007.",
+    "note": "The Liepājas alus brand lives on and is now brewed in Lithuania."
   },
   {
     "id": "lacplesa-alus",
@@ -1995,7 +2000,8 @@
     "founded": 1948,
     "logo": "",
     "website": "",
-    "description": "Brewery of the legendary kolhozs Lāčplēsis in Lielvārde, where beer was first brewed for Līgo in 1948. Royal Unibrew moved production to Liepāja in 2008 and the Lielvārde plant closed. The brand lives on and is now brewed in Lithuania."
+    "description": "Brewery of the legendary kolhozs Lāčplēsis in Lielvārde, where beer was first brewed for Līgo in 1948. Royal Unibrew moved production to Liepāja in 2008 and the Lielvārde plant closed.",
+    "note": "The Lāčplēsis brand lives on under Royal Unibrew and is now brewed in Lithuania."
   },
   {
     "id": "gulbenes-alus",

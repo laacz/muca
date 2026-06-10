@@ -560,6 +560,15 @@ button { font-family: inherit; cursor: pointer; }
   background: var(--accent);
 }
 .dt-blurb { font-size: 14.5px; line-height: 1.6; color: var(--ink); margin: 0; text-wrap: pretty; }
+.dt-note {
+  display: flex; gap: 10px; align-items: flex-start;
+  font-size: 13.5px; line-height: 1.55; color: var(--ink);
+  background: color-mix(in srgb, var(--c-beer) 11%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--c-beer) 38%, var(--line));
+  border-radius: 10px; padding: 10px 12px;
+  text-wrap: pretty;
+}
+.dt-note svg { width: 17px; height: 17px; flex: none; margin-top: 2px; color: var(--c-beer); }
 
 .dt-foot { padding: 22px var(--pad) 28px; margin-top: auto; }
 .dt-cta {
