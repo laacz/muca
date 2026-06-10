@@ -105,7 +105,9 @@
 /* Reset / base */
 * { box-sizing: border-box; }
 [x-cloak] { display: none !important; }   /* hide Alpine-managed UI until it initialises */
-html, body { margin: 0; height: 100%; background: #ededec; }
+/* hard scroll-lock: the app is a fixed full-screen surface; without this iOS
+   Safari competes for drag gestures and inner scrollers (.list) can go dead */
+html, body { margin: 0; height: 100%; background: #ededec; overflow: hidden; overscroll-behavior: none; }
 body {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
@@ -130,7 +132,9 @@ button { font-family: inherit; cursor: pointer; }
 /* HEADER */
 .hd {
   display: flex; align-items: center; gap: 20px;
-  padding: 0 22px; height: 64px; flex: none;
+  --hd-pad: 22px;
+  padding: 0 var(--hd-pad);
+  height: 64px; flex: none;
   background: var(--surface);
   border-bottom: 1px solid var(--line);
   z-index: 30;
@@ -147,7 +151,7 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 11px; letter-spacing: .16em; text-transform: uppercase;
   color: var(--ink-3); font-weight: 600;
 }
-@media (max-width: 880px) { .hd-sub { display: none; } }
+@media (max-width: 1080px) { .hd-sub { display: none; } }
 
 .hd-spacer { flex: 1; }
 
@@ -171,11 +175,6 @@ button { font-family: inherit; cursor: pointer; }
 }
 .seg .swatch { width: 8px; height: 8px; border-radius: 50%; }
 .seg button[data-on="1"] .swatch { box-shadow: 0 0 0 2px color-mix(in srgb, #fff 55%, transparent); }
-.seg .count {
-  font-family: var(--font-mono); font-size: 11px; color: var(--ink-3);
-  font-weight: 400;
-}
-.seg button[data-on="1"] .count { color: color-mix(in srgb, var(--accent-ink) 75%, transparent); }
 
 .hd-tools { display: flex; align-items: center; gap: 10px; }
 
@@ -219,32 +218,31 @@ button { font-family: inherit; cursor: pointer; }
 .hd-about:hover { border-color: var(--accent); color: var(--accent); }
 .hd-about svg { width: 17px; height: 17px; }
 
-@media (max-width: 720px) {
-  .seg .label { display: none; }
-  .seg button { padding: 7px 9px; }
+/* compact the header well before it can overflow: full labels need ~900px+
+   (phones in landscape land in the 721–930px range and got a clipped header) */
+@media (max-width: 940px) {
+  .seg button { padding: 7px 10px; }
   .toggle-defunct .t-label { display: none; }
   .hd-about .t-label { display: none; }
   .hd-about { padding: 0; width: 38px; justify-content: center; }
-  .hd { gap: 12px; padding: 0 14px; }
+  .hd { gap: 12px; --hd-pad: 14px; }
 }
 
 /* BODY: sidebar + map */
 .body { flex: 1; min-height: 0; display: flex; position: relative; }
 
 .side {
-  width: 372px; flex: none;
+  width: 344px; flex: none;
   display: flex; flex-direction: column;
   background: var(--surface);
   border-right: 1px solid var(--line);
   position: relative; z-index: 20;
 }
-.app[data-density="compact"] .side { width: 332px; }
-@media (max-width: 760px) { .side { width: 300px; } }
+.app[data-density="compact"] .side { width: 304px; }
+@media (max-width: 760px) { .side { width: 280px; } }
 
-.side-search {
-  padding: var(--pad) var(--pad) 12px;
-  border-bottom: 1px solid var(--line);
-}
+/* lives inside .list so it scrolls away with the cards */
+.side-search { flex: none; }
 .search {
   display: flex; align-items: center; gap: 10px;
   background: var(--surface-2); border: 1px solid var(--line);
@@ -266,17 +264,16 @@ button { font-family: inherit; cursor: pointer; }
 }
 .search input:focus ~ .search-keys,
 .search input:not(:placeholder-shown) ~ .search-keys { display: none; }
-
-.side-meta {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 11px var(--pad); border-bottom: 1px solid var(--line);
-  font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
-  color: var(--ink-3); font-weight: 600;
+/* touch devices: no hardware keyboard - hide the shortcut hints, and keep the
+   input at 16px so iOS Safari doesn't auto-zoom the page when it's focused */
+@media (hover: none) and (pointer: coarse) {
+  .search-keys { display: none; }
+  .search input { font-size: 16px; }
 }
-.side-meta .n { font-family: var(--font-mono); letter-spacing: 0; }
 
 .list {
   flex: 1; min-height: 0; overflow-y: auto;
+  -webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior: contain;
   padding: var(--card-pad);
   display: flex; flex-direction: column; gap: var(--row-gap);
   scrollbar-width: thin; scrollbar-color: var(--line-2) transparent;
@@ -390,6 +387,7 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--ink-3) !important;
   -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
   border-radius: 8px 0 0 0; font-size: 10px;
+  padding: 0 calc(5px + env(safe-area-inset-right)) 0 5px;
 }
 .leaflet-control-attribution a { color: var(--ink-2) !important; }
 
@@ -434,27 +432,13 @@ button { font-family: inherit; cursor: pointer; }
 }
 .leaflet-tooltip.muca-tip::before { border-top-color: var(--ink); }
 
-/* legend (Leaflet control) */
-.map-legend {
-  background: color-mix(in srgb, var(--surface) 86%, transparent);
-  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
-  border: 1px solid var(--line); border-radius: 12px;
-  padding: 12px 14px; box-shadow: var(--shadow);
-  display: flex; flex-direction: column; gap: 8px;
-}
-.map-legend .lg-title {
-  font-size: 10px; letter-spacing: .14em; text-transform: uppercase;
-  color: var(--ink-3); font-weight: 700; margin-bottom: 1px;
-}
-.map-legend .lg-row { display: flex; align-items: center; gap: 9px; font-size: 12.5px; color: var(--ink-2); font-weight: 500; }
-.map-legend .lg-dot { width: 11px; height: 11px; border-radius: 50%; border: 2px solid var(--pin-stroke); }
-
 /* DETAIL PANEL - slides over the sidebar */
 .detail {
   position: absolute; inset: 0; z-index: 25;
   background: var(--surface);
   display: flex; flex-direction: column;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch; touch-action: pan-y; overscroll-behavior: contain;
   scrollbar-width: thin; scrollbar-color: var(--line-2) transparent;
 }
 
@@ -569,7 +553,7 @@ button { font-family: inherit; cursor: pointer; }
   text-wrap: pretty;
 }
 
-.dt-foot { padding: 22px var(--pad) 28px; margin-top: auto; }
+.dt-foot { padding: 22px var(--pad) calc(28px + env(safe-area-inset-bottom)); margin-top: auto; }
 .dt-cta {
   width: 100%; height: 46px; border: 0; border-radius: 12px;
   background: var(--accent); color: var(--accent-ink); text-decoration: none;
@@ -627,11 +611,20 @@ button { font-family: inherit; cursor: pointer; }
 /* RESPONSIVE - mobile is map-first: full-screen map, no list. Tapping a pin
    slides the detail up as a bottom sheet (no list/search on small screens). */
 @media (max-width: 720px) {
+  /* even the compact single-row header needs ~550px - wrap to two rows:
+     brand + tools first, filter bar full-width underneath */
+  .hd { flex-wrap: wrap; height: auto; padding-top: 10px; padding-bottom: 10px; row-gap: 10px; }
+  .hd-brand { order: 1; }
+  .hd-spacer { order: 2; }
+  .hd-tools { order: 3; }
+  .seg { order: 4; width: 100%; justify-content: space-between; }
+  .seg button { flex: 1; justify-content: center; }
+
   .body { display: block; position: relative; }
   .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 
   /* hide the list UI on mobile - the map is the primary surface */
-  .side .side-search, .side .side-meta, .side .list { display: none; }
+  .side .list { display: none; }
 
   /* sidebar becomes a bottom sheet that only appears with an open detail */
   .side {

@@ -95,11 +95,6 @@
         hostOf(url) { return url ? url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "") : ""; },
         townLine(b) { return b.city === b.region ? b.city : `${b.city} · ${b.region}`; },
         coordsOf(b) { return `${b.lat.toFixed(4)}, ${b.lng.toFixed(4)}`; },
-        countFor(key) {
-          // a maker counts once per type it makes, so category counts can sum to
-          // more than the "all" total (which stays a unique maker count)
-          return key === "all" ? this.data.length : this.data.filter((b) => b.types.includes(key)).length;
-        },
         // CSS fill for a maker's pin: solid for one type, an even conic split for several
         pie(types) {
           if (types.length < 2) return `var(--c-${types[0]})`;
@@ -202,18 +197,6 @@
             zoomControl: true, minZoom: 6, maxZoom: 16, worldCopyJump: false,
           });
           this.setTile();
-
-          const legend = L.control({ position: "bottomleft" });
-          legend.onAdd = function () {
-            const d = L.DomUtil.create("div", "map-legend");
-            d.innerHTML = `<div class="lg-title">Makers</div>
-              <div class="lg-row"><span class="lg-dot" style="background:var(--c-beer)"></span>Beer</div>
-              <div class="lg-row"><span class="lg-dot" style="background:var(--c-cider)"></span>Cider</div>
-              <div class="lg-row"><span class="lg-dot" style="background:var(--c-wine)"></span>Wine</div>`;
-            L.DomEvent.disableClickPropagation(d);
-            return d;
-          };
-          legend.addTo(map);
 
           this.data.forEach((b) => {
             const m = L.marker([b.lat, b.lng], {

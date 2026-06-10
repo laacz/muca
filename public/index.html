@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>MUCA - Latvian Breweries Map · beer, cider &amp; wine</title>
   <meta name="description" content="An interactive map of 100+ Latvian beer breweries, cideries and wineries - addresses, status and details for makers across Latvia." />
   <link rel="canonical" href="https://muca.didnt.work/" />
@@ -59,7 +59,6 @@
           <button :data-on="filter === f.key ? '1' : '0'" @click="filter = f.key">
             <span class="swatch" x-show="f.key !== 'all'" :style="`background:var(--c-${f.key})`"></span>
             <span class="label" x-text="f.label"></span>
-            <span class="count" x-text="countFor(f.key)"></span>
           </button>
         </template>
       </div>
@@ -88,17 +87,14 @@
           </div>
         </template>
 
-        <div class="side-search" x-show="!error">
-          <label class="search">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
-            <input type="search" placeholder="Search makers, towns…" spellcheck="false" autocomplete="off" x-model="query" x-ref="search" />
-            <span class="search-keys" aria-hidden="true"><kbd>/</kbd><kbd x-text="kbdK"></kbd></span>
-          </label>
-        </div>
-        <div class="side-meta" x-show="!error">
-          <span>Showing</span><span class="n" x-text="`${items.length} / ${data.length}`"></span>
-        </div>
         <div class="list" x-show="!error">
+          <div class="side-search">
+            <label class="search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+              <input type="search" placeholder="Search makers, towns…" spellcheck="false" autocomplete="off" x-model="query" x-ref="search" />
+              <span class="search-keys" aria-hidden="true"><kbd>/</kbd><kbd x-text="kbdK"></kbd></span>
+            </label>
+          </div>
           <template x-if="items.length === 0">
             <div class="empty"><div class="big">No makers found</div><div>Try a different search or filter.</div></div>
           </template>
