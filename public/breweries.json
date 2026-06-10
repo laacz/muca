@@ -2014,5 +2014,23 @@
     "logo": "",
     "website": "",
     "description": "Brewing in Gulbene dates to 1882, with the interwar enterprise known as the Vecgulbenes brewery. The brewery ran out of working capital during the financial crisis, stopped production in 2009 and was later liquidated."
+  },
+  {
+    "id": "bartas-alus",
+    "name": "Bārtas alus",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "\"Apinīši\", Bārta, Bārtas pagasts, Dienvidkurzemes novads, LV-3482",
+    "city": "Bārta",
+    "region": "Kurzeme",
+    "lat": 56.35161,
+    "lng": 21.3224,
+    "coord_precision": "exact",
+    "founded": 2024,
+    "logo": "/logos/bartas-alus.jpg",
+    "website": "https://www.facebook.com/BartasAlus/",
+    "description": "Small countryside brewery in the village of Bārta in Dienvidkurzeme, reviving the local brewing tradition of the Bārta cultural space. The beer is made from local malt, brewed over a real fire, unfiltered and unpasteurized, with brewery tours and tastings on request."
   }
 ]
