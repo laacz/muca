@@ -1064,7 +1064,7 @@
     "types": [
       "beer"
     ],
-    "status": "working",
+    "status": "defunct",
     "address": "Zinātnes iela 11, Sigulda, Siguldas novads, LV-2150",
     "city": "Sigulda",
     "region": "Vidzeme",
@@ -1073,8 +1073,9 @@
     "coord_precision": "exact",
     "founded": 2019,
     "logo": "/logos/kussh-brewery.jpg",
-    "website": "https://www.kusshbrewery.com/",
-    "description": "Independent craft brewery and weekday taproom in Sigulda's Peltes district, founded in 2019, known for creative hop-forward ales and rotating seasonal brews, with advance-booked brewery masterclasses for groups of 4–40."
+    "website": "https://www.instagram.com/kussh_brewery/",
+    "description": "Independent craft brewery and weekday taproom in Sigulda's Peltes district, founded in 2019, known for creative hop-forward ales and rotating seasonal brews, with advance-booked brewery masterclasses for groups of 4–40.",
+    "note": "On hiatus: the taproom at Zinātnes iela 11 closed on 31 January 2026. The brewery says brewing, masterclasses and visits will continue at a new address, which has not been announced yet."
   },
   {
     "id": "hat-brewery",
