@@ -161,10 +161,7 @@
 
             <template x-if="selected.note">
               <div class="dt-section">
-                <div class="dt-note">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.2 2.9 19.3a1 1 0 0 0 .86 1.5h16.48a1 1 0 0 0 .86-1.5L12 4.2Z"/><path d="M12 10v4.6"/><path d="M12 17.6h.01"/></svg>
-                  <span x-text="selected.note"></span>
-                </div>
+                <div class="dt-note" x-text="selected.note"></div>
               </div>
             </template>
 
