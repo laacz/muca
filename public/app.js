@@ -163,6 +163,19 @@
           else if (this.selectedId) this.deselect();
         },
 
+        // "/" (outside a field) or Cmd/Ctrl+K (anywhere) focuses the search box
+        onHotkey(e) {
+          const cmdK = (e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k";
+          const slash = e.key === "/" && !e.metaKey && !e.ctrlKey && !e.altKey;
+          if (!cmdK && !slash) return;
+          const t = e.target;
+          const typing = t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable);
+          if (slash && typing) return;
+          e.preventDefault();
+          this.$refs.search.focus();
+          this.$refs.search.select();
+        },
+
         // Map (imperative Leaflet, best-effort)
         initMapSafe() {
           if (typeof L === "undefined" || !L || typeof L.map !== "function") {
