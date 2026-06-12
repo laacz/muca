@@ -2112,5 +2112,23 @@
     "logo": "/logos/bruzis-murza.jpg",
     "website": "https://www.bruzismurza.lv/",
     "description": "Family-run microbrewery opened in 2021 by the Gekišu family in a renovated barn at their ancestral Zaļmuiža homestead in Andrupene parish, brewing unfiltered, unpasteurised ale-style beers from deep-well groundwater, with brewery tours and tastings by prior appointment."
+  },
+  {
+    "id": "lembuzu-bruzis",
+    "name": "Lembužu brūzis",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "\"Lemizars\", Lembuži, Liepupes pagasts, Limbažu novads, LV-4023",
+    "city": "Lembuži",
+    "region": "Vidzeme",
+    "lat": 57.47297,
+    "lng": 24.4324,
+    "coord_precision": "exact",
+    "founded": 2019,
+    "logo": "/logos/lembuzu-bruzis.png",
+    "website": "https://lembuzi.lv",
+    "description": "Craft brewery at the Lemizars homestead in Lembuži, beside the A1 Rīga–Tallinn highway in the North Vidzeme Biosphere Reserve, opened in 2019 by the owners of the nearby Sidrabiņi pub. Brews its Oriģinālais pale lager alongside IPA, porter, pilsner and wheat beers, with a banquet hall and sauna on site."
   }
 ]
