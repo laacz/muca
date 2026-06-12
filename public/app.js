@@ -190,6 +190,23 @@
         },
 
         initMap() {
+          // Fractional zoom (zoomSnap: 0) scales the tile container by a
+          // non-integer factor, so tile edges land on sub-pixels and either
+          // gap (backdrop leaks through) or overlap (Leaflet's plus-lighter
+          // blend adds the colours and clamps toward white - the random
+          // hairlines along tile seams). Oversize each tile by 1px so
+          // neighbours always overlap; style.css reverts the tile blend mode
+          // to normal so that overlap paints over instead of adding.
+          const initTile = L.GridLayer.prototype._initTile;
+          L.GridLayer.include({
+            _initTile: function (tile) {
+              initTile.call(this, tile);
+              const size = this.getTileSize();
+              tile.style.width = size.x + 1 + "px";
+              tile.style.height = size.y + 1 + "px";
+            },
+          });
+
           // An initial view is required up front: without it Leaflet defers layer
           // onAdd via whenReady(), and getContainer() returns undefined.
           map = L.map(this.$refs.map, {

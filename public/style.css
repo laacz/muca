@@ -364,6 +364,13 @@ button { font-family: inherit; cursor: pointer; }
 }
 .leaflet-container a { color: var(--accent); }
 
+/* Leaflet 1.9 blends tiles with mix-blend-mode: plus-lighter (a Chromium
+   fade-flicker workaround). At fractional zoom (zoomSnap: 0) adjacent tiles'
+   anti-aliased edges overlap by a sub-pixel and the additive blend clamps
+   them toward white - the random hairlines along tile seams. Blend normally;
+   the 1px tile overlap set in app.js covers the gaps instead. */
+.leaflet-container img.leaflet-tile { mix-blend-mode: normal; }
+
 /* shown if the map library/init fails - keeps the rest of the app usable */
 .map-error {
   position: absolute; inset: 0; z-index: 1100; display: flex; flex-direction: column;
