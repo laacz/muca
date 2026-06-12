@@ -2130,5 +2130,23 @@
     "logo": "/logos/lembuzu-bruzis.png",
     "website": "https://lembuzi.lv",
     "description": "Craft brewery at the Lemizars homestead in Lembuži, beside the A1 Rīga–Tallinn highway in the North Vidzeme Biosphere Reserve, opened in 2019 by the owners of the nearby Sidrabiņi pub. Brews its Oriģinālais pale lager alongside IPA, porter, pilsner and wheat beers, with a banquet hall and sauna on site."
+  },
+  {
+    "id": "zs-naglinas",
+    "name": "ZS Nagliņas",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "\"Nagliņas\", Vaicuļeva, Indras pagasts, Krāslavas novads, LV-5664",
+    "city": "Indra",
+    "region": "Latgale",
+    "lat": 55.85332,
+    "lng": 27.55179,
+    "coord_precision": "exact",
+    "founded": 2024,
+    "logo": "/logos/zs-naglinas.jpg",
+    "website": "https://www.facebook.com/p/ZS-Nagli%C5%86as-61566418914443/",
+    "description": "Farm brewery at the Nagliņas homestead in Vaicuļeva by Indra, a few kilometres from the Belarusian border in Krāslava municipality. The farm, registered in 2024, grows grain and potatoes and brews its Indras alus beer, pouring it at local fairs and festivals around Latgale."
   }
 ]
