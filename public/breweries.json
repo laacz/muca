@@ -2202,5 +2202,23 @@
     "logo": "/logos/ledus-vini.png",
     "website": "https://www.ledusvini.lv/",
     "description": "Boutique winery in a former root cellar at Upesciems near Garkalne, run by winemaker Lauris Salenieks, producing fruit and berry wines without added sulphites. Best known for its apple ice wine, slowly pressed from frozen Latvian apples and matured for several years, which reaches Latvia's top restaurants and has won international awards."
+  },
+  {
+    "id": "kraslavas-avots",
+    "name": "Krāslavas avots",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Vītolu iela 4, Krāslava, Krāslavas novads, LV-5601",
+    "city": "Krāslava",
+    "region": "Latgale",
+    "lat": 55.90597,
+    "lng": 27.16804,
+    "coord_precision": "exact",
+    "founded": 1988,
+    "logo": "/logos/kraslavas-avots.jpeg",
+    "website": "https://www.facebook.com/kraslavasalus/",
+    "description": "Long-running Krāslava brewery operating since 1988 and since modernised, producing traditional unfiltered 'live' light and dark honey beers under the Krāslavas alus name. The beer is sold from its on-site shop, poured at tastings and tours for visiting groups, and stocked in shops around the town."
   }
 ]
