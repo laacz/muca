@@ -2184,5 +2184,23 @@
     "logo": "/logos/rundales-udensdzirnavas.jpg",
     "website": "https://rundalesdzirnavas.lv/",
     "description": "Brewery in the restored 18th-century Rundāle watermill complex at Pilsrundāle, about a kilometre from Rundāle Palace in Bauska municipality. Opened in 2023, it brews a single 'Rudmate' lager poured on site, where visitors can tour the five-storey mill museum and the brewing equipment and taste the beer."
+  },
+  {
+    "id": "ledus-vini",
+    "name": "Ledus vīni",
+    "types": [
+      "wine"
+    ],
+    "status": "working",
+    "address": "Elenburgas iela 95, Upesciems, Garkalnes pagasts, Ropažu novads, LV-2137",
+    "city": "Upesciems",
+    "region": "Vidzeme",
+    "lat": 56.98521,
+    "lng": 24.33857,
+    "coord_precision": "exact",
+    "founded": 2012,
+    "logo": "/logos/ledus-vini.png",
+    "website": "https://www.ledusvini.lv/",
+    "description": "Boutique winery in a former root cellar at Upesciems near Garkalne, run by winemaker Lauris Salenieks, producing fruit and berry wines without added sulphites. Best known for its apple ice wine, slowly pressed from frozen Latvian apples and matured for several years, which reaches Latvia's top restaurants and has won international awards."
   }
 ]
