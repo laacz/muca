@@ -2166,5 +2166,23 @@
     "logo": "/logos/augsdaugavas-alus.png",
     "website": "https://augsdaugavaalus.lv/",
     "description": "Daugavpils brewery run by VLABA, brewing European-style beers under its Augšdaugavas and Latgales labels from local Latvian malts and artesian well water. Founded in 2014, it makes amber lagers, ales and soft drinks and also offers contract brewing, custom labels and excise warehousing."
+  },
+  {
+    "id": "rundales-udensdzirnavas",
+    "name": "Rundāles ūdensdzirnavas",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Pilsrundāle, Rundāles pagasts, Bauskas novads, LV-3921",
+    "city": "Pilsrundāle",
+    "region": "Zemgale",
+    "lat": 56.42242,
+    "lng": 24.0121,
+    "coord_precision": "exact",
+    "founded": 2023,
+    "logo": "/logos/rundales-udensdzirnavas.jpg",
+    "website": "https://rundalesdzirnavas.lv/",
+    "description": "Brewery in the restored 18th-century Rundāle watermill complex at Pilsrundāle, about a kilometre from Rundāle Palace in Bauska municipality. Opened in 2023, it brews a single 'Rudmate' lager poured on site, where visitors can tour the five-storey mill museum and the brewing equipment and taste the beer."
   }
 ]
