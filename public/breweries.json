@@ -2148,5 +2148,23 @@
     "logo": "/logos/zs-naglinas.jpg",
     "website": "https://www.facebook.com/p/ZS-Nagli%C5%86as-61566418914443/",
     "description": "Farm brewery at the Nagliņas homestead in Vaicuļeva by Indra, a few kilometres from the Belarusian border in Krāslava municipality. The farm, registered in 2024, grows grain and potatoes and brews its Indras alus beer, pouring it at local fairs and festivals around Latgale."
+  },
+  {
+    "id": "augsdaugavas-alus",
+    "name": "Augšdaugavas alus",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Vecpils iela 13, Daugavpils, LV-5414",
+    "city": "Daugavpils",
+    "region": "Latgale",
+    "lat": 55.86685,
+    "lng": 26.5989,
+    "coord_precision": "exact",
+    "founded": 2014,
+    "logo": "/logos/augsdaugavas-alus.png",
+    "website": "https://augsdaugavaalus.lv/",
+    "description": "Daugavpils brewery run by VLABA, brewing European-style beers under its Augšdaugavas and Latgales labels from local Latvian malts and artesian well water. Founded in 2014, it makes amber lagers, ales and soft drinks and also offers contract brewing, custom labels and excise warehousing."
   }
 ]
