@@ -137,7 +137,7 @@
     "types": [
       "beer"
     ],
-    "status": "working",
+    "status": "defunct",
     "address": "Tirgus iela 9, Ventspils, LV-3601",
     "city": "Ventspils",
     "region": "Kurzeme",
@@ -147,7 +147,8 @@
     "founded": 2016,
     "logo": "/logos/courlander.png",
     "website": "https://www.facebook.com/VentspilsAlusDaritava",
-    "description": "Craft brewery established in 2016 in the Old Town of Ventspils to revive local beer-making traditions, brewing unfiltered, unpasteurised lagers and dark beers to the 1516 German Purity Law."
+    "description": "Craft brewery established in 2016 in the Old Town of Ventspils to revive local beer-making traditions, brewing unfiltered, unpasteurised lagers and dark beers to the 1516 German Purity Law.",
+    "note": "No longer brewing - the equipment is up for sale and the former café premises have been leased to another business."
   },
   {
     "id": "brengulu-alus",
@@ -275,7 +276,7 @@
     "logo": "/logos/odziena.png",
     "website": "https://odzienasmuiza.lv",
     "description": "A craft brewery founded in 2014 in the restored mill-bakery of the neo-Gothic Odziena Manor, producing an American IPA and an amber ale named 1905, alongside a rural guest house.",
-    "note": "Brewing appears to have wound down - on-site brewery tours and tastings are currently listed as unavailable, while the manor still operates as a guesthouse and events venue. Unconfirmed reports say the remaining brewing equipment has been removed and the site repurposed."
+    "note": "Brewing appears to have wound down - on-site brewery tours and tastings are currently listed as unavailable, while the manor still operates as a guesthouse and events venue. Unconfirmed reports say the remaining brewing equipment has been removed and the site repurposed. The Odziena beer trademark has since passed to the owner of Brūzis Manufaktūra in Riga, where any beer under the brand is now made, though it is currently little used."
   },
   {
     "id": "talavas-kenina-alus",
@@ -365,7 +366,8 @@
     "founded": 2018,
     "logo": "/logos/hypnos-brewery.jpg",
     "website": "https://www.facebook.com/HypnosBrewery/",
-    "description": "A craft brewery that began as a small garage operation in 2018 in the Vītoliņi industrial park, known for inventive tropical sours, IPAs and spiced wheat ales."
+    "description": "A craft brewery that began as a small garage operation in 2018 in the Vītoliņi industrial park, known for inventive tropical sours, IPAs and spiced wheat ales.",
+    "note": "Effectively a nomad ('cuckoo') brewer - the founders brewed at their own premises only briefly and now brew mainly for events, increasingly rarely. The registered address may no longer host active brewing."
   },
   {
     "id": "rezeknis-bryuvers",
@@ -994,7 +996,7 @@
     "types": [
       "beer"
     ],
-    "status": "working",
+    "status": "defunct",
     "address": "Lejupes iela 7, Ādaži, Ādažu novads, LV-2164",
     "city": "Ādaži",
     "region": "Vidzeme",
@@ -1004,7 +1006,8 @@
     "founded": 2018,
     "logo": "/logos/v1-brewery.jpg",
     "website": "https://v1brewery.lv",
-    "description": "Modern craft brewery opened in 2018 in the Ādaži industrial zone, producing a diverse range of styles from Belgian classics to American-inspired ales, with brewery excursions available for visitors."
+    "description": "Modern craft brewery opened in 2018 in the Ādaži industrial zone, producing a diverse range of styles from Belgian classics to American-inspired ales, with brewery excursions available for visitors.",
+    "note": "No longer brewing - the premises and equipment have been sold in full, and the fermenting tanks were moved to Brūzis Manufaktūra in Riga. The company may still exist on paper, but the brewery has not produced for some time."
   },
   {
     "id": "jaunpils-alus",
@@ -2223,5 +2226,42 @@
     "logo": "/logos/kraslavas-avots.jpeg",
     "website": "https://www.facebook.com/kraslavasalus/",
     "description": "Long-running Krāslava brewery operating since 1988 and since modernised, producing traditional unfiltered 'live' light and dark honey beers under the Krāslavas alus name. The beer is sold from its on-site shop, poured at tastings and tours for visiting groups, and stocked in shops around the town."
+  },
+  {
+    "id": "perkondelu-alus",
+    "name": "Pērkondēlu alus",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Vīraksnes iela 1, Atašiene, Atašienes pagasts, Jēkabpils novads, LV-5211",
+    "city": "Atašiene",
+    "region": "Latgale",
+    "lat": 56.5438067,
+    "lng": 26.391938,
+    "coord_precision": "exact",
+    "founded": 2022,
+    "logo": "",
+    "website": "https://www.facebook.com/perkondelualus/",
+    "description": "A small family-run craft brewery in the village of Atašiene, on the Latgale–Sēlija border in eastern Latvia, founded around 2022 by Kristīna Rubina-Apinīte and Normunds Apinītis. It brews about a dozen traditional recipes - pale, dark, strong and hemp beers among them - sold mainly at markets and by appointment at the brewery."
+  },
+  {
+    "id": "rols-ols",
+    "name": "Rols ols",
+    "types": [
+      "beer"
+    ],
+    "status": "working",
+    "address": "Rekova, Šķilbēnu pagasts, Balvu novads",
+    "city": "Rekova",
+    "region": "Latgale",
+    "lat": 57.0411,
+    "lng": 27.615,
+    "coord_precision": "approx",
+    "founded": null,
+    "logo": "",
+    "website": "",
+    "description": "An emerging craft brewery in the village of Rekova in north-eastern Latgale, run by Rolands Keišs and relocating from the nearby Kotiņi farm into a new purpose-built house; its name puns on 'ols', the Latgalian dialect word for beer.",
+    "note": "Still under construction as of 2026, with a publicly accessible pub planned. For now the beer is made on a small scale and sold mainly at events."
   }
 ]
