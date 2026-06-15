@@ -64,16 +64,17 @@
       "beer"
     ],
     "status": "working",
-    "address": "Aristida Briāna iela 9A, Rīga, LV-1001",
-    "city": "Rīga",
-    "region": "Rīga",
-    "lat": 56.9648,
-    "lng": 24.131,
-    "coord_precision": "exact",
+    "address": "Eimuri, Ādažu pagasts, Ādažu novads, LV-2164",
+    "city": "Eimuri",
+    "region": "Vidzeme",
+    "lat": 57.085,
+    "lng": 24.291,
+    "coord_precision": "approx",
     "founded": 2013,
     "logo": "/logos/labietis.png",
     "website": "https://labietis.lv",
-    "description": "Craft brewery and taproom opened in 2013 on the grounds of Riga's historic von Stricka brewery, famous for experimental pagan-inspired ales brewed with herbs, spices and native Latvian botanicals."
+    "description": "Craft brewery known for experimental pagan-inspired ales brewed with herbs, spices and native Latvian botanicals. Founded in 2013 on the grounds of Riga's historic von Stricka brewery, it moved production to a larger facility in Eimuri, Ādažu novads, around 2016-2017 as the original site became too cramped.",
+    "note": "Labietis's original Kultūrkrogs taproom remains open at Aristīda Briāna iela 9A in Riga, where the brewery started in 2013, but the beer itself is now brewed at the Eimuri facility."
   },
   {
     "id": "nurme-alus",
@@ -263,7 +264,7 @@
     "types": [
       "beer"
     ],
-    "status": "working",
+    "status": "defunct",
     "address": "\"Zemgaļi\", Odziena, Vietalvas pagasts, Aizkraukles novads, LV-5109",
     "city": "Odziena",
     "region": "Vidzeme",
@@ -273,7 +274,8 @@
     "founded": 2014,
     "logo": "/logos/odziena.png",
     "website": "https://odzienasmuiza.lv",
-    "description": "A craft brewery founded in 2014 in the restored mill-bakery of the neo-Gothic Odziena Manor, producing an American IPA and an amber ale named 1905, alongside a rural guest house."
+    "description": "A craft brewery founded in 2014 in the restored mill-bakery of the neo-Gothic Odziena Manor, producing an American IPA and an amber ale named 1905, alongside a rural guest house.",
+    "note": "Brewing appears to have wound down - on-site brewery tours and tastings are currently listed as unavailable, while the manor still operates as a guesthouse and events venue. Unconfirmed reports say the remaining brewing equipment has been removed and the site repurposed."
   },
   {
     "id": "talavas-kenina-alus",
@@ -1337,7 +1339,7 @@
     "types": [
       "beer"
     ],
-    "status": "working",
+    "status": "defunct",
     "address": "Liepu iela 3, Vecumnieki, Vecumnieku pagasts, Bauskas novads, LV-3933",
     "city": "Vecumnieki",
     "region": "Zemgale",
@@ -1347,7 +1349,8 @@
     "founded": 2021,
     "logo": "/logos/dziru-kalve.jpg",
     "website": "https://www.facebook.com/p/Dziru-kalve-100092427874749/",
-    "description": "Nano-brewery founded in 2021 in Vecumnieki by two craft-beer enthusiasts, producing small-batch IPAs, stouts, sours, and other hop-forward styles."
+    "description": "Nano-brewery founded in 2021 in Vecumnieki by two craft-beer enthusiasts, producing small-batch IPAs, stouts, sours, and other hop-forward styles.",
+    "note": "Production appears to have stopped and the business has been reported as up for sale via the brewery's Facebook page. The company remains registered but is winding down."
   },
   {
     "id": "windau-wines",
