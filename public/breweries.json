@@ -1360,7 +1360,8 @@
     "name": "Windau Wines",
     "types": [
       "wine",
-      "cider"
+      "cider",
+      "beer"
     ],
     "status": "working",
     "address": "Tirgus iela 8, Ventspils, LV-3601",
@@ -1372,7 +1373,7 @@
     "founded": 2016,
     "logo": "/logos/windau-wines.webp",
     "website": "https://windauwines.lv",
-    "description": "A family winery and cidery in the heart of Ventspils Market, crafting wines, ciders, and sparkling wines from locally gathered berries, birch sap, and wild Latvian ingredients since 2016."
+    "description": "A family winery, cidery and brewery in the heart of Ventspils Market, crafting wines, ciders, sparkling wines, spirits and its own dark and light beers from locally gathered berries, birch sap, and wild Latvian ingredients since 2016."
   },
   {
     "id": "vini-curlandia",
