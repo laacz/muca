@@ -218,11 +218,13 @@ button { font-family: inherit; cursor: pointer; }
 .hd-about:hover { border-color: var(--accent); color: var(--accent); }
 .hd-about svg { width: 17px; height: 17px; }
 
-/* compact the header well before it can overflow: full labels need ~900px+
-   (phones in landscape land in the 721–930px range and got a clipped header) */
+/* compact the header before it can overflow (phones in landscape land in the
+   721–930px range and got a clipped header). About collapses to its icon - the
+   "i" is self-explanatory - but the defunct toggle keeps its label: a bare
+   switch is unidentifiable, and "Hide defunct" still fits down to the 720px
+   wrap point. */
 @media (max-width: 940px) {
   .seg button { padding: 7px 10px; }
-  .toggle-defunct .t-label { display: none; }
   .hd-about .t-label { display: none; }
   .hd-about { padding: 0; width: 38px; justify-content: center; }
   .hd { gap: 12px; --hd-pad: 14px; }

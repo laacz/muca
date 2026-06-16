@@ -64,7 +64,8 @@
       </div>
 
       <div class="hd-tools">
-        <button class="toggle-defunct" @click="hideDefunct = !hideDefunct">
+        <button class="toggle-defunct" @click="hideDefunct = !hideDefunct"
+                :aria-pressed="hideDefunct ? 'true' : 'false'" aria-label="Hide defunct">
           <span class="switch" :data-on="hideDefunct ? '1' : '0'"><i></i></span>
           <span class="t-label">Hide defunct</span>
         </button>
