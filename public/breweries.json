@@ -540,16 +540,16 @@
       "cider"
     ],
     "status": "working",
-    "address": "Brīvības iela 22, Gulbene, LV-4401",
-    "city": "Gulbene",
-    "region": "Vidzeme",
-    "lat": 57.1742,
-    "lng": 26.754,
+    "address": "\"Tālavas\", Daudzeva, Daudzeses pagasts, Aizkraukles novads, LV-5111",
+    "city": "Daudzeva",
+    "region": "Zemgale",
+    "lat": 56.4667,
+    "lng": 25.2333,
     "coord_precision": "approx",
     "founded": 2013,
     "logo": "/logos/talavas-sidrs.webp",
     "website": "https://www.talava.lv",
-    "description": "Founded in 2013 in a family garage in Gulbene, crafting 100% natural apple ciders from local Latvian produce and now one of the leading natural-beverage producers in the Baltics."
+    "description": "Founded in 2013 in a family garage in Gulbene and relocated to Daudzeva (Aizkraukles novads) in 2025, crafting 100% natural apple ciders from local Latvian produce and now one of the leading natural-beverage producers in the Baltics, with a production site open for tours and tastings."
   },
   {
     "id": "jaunmoku-darzi",
