@@ -1,5 +1,7 @@
 # MUCA — Latvian Breweries Map
 
+![MUCA — Latvian Breweries Map](public/og.png)
+
 An interactive map of beer breweries, cideries and wineries in Latvia. Can be found at [muca.didnt.work](https://muca.didnt.work).
 
 ## Building
