@@ -2282,5 +2282,23 @@
     "logo": "",
     "website": "https://www.instagram.com/jaunbriezualus/",
     "description": "A young, small-scale craft brewery in the Jaunbērze countryside of Dobele municipality, registered in late 2025 and making both traditional and hop-forward beers. Its first releases include pale ales (Cascade, Riwaka), a New England IPA and a Flanders-style sour; the brewery's motto is 'No Jaunbērzes nāk alus ar dvēseli' (from Jaunbērze comes beer with soul)."
+  },
+  {
+    "id": "beverinas-dzerieni",
+    "name": "Beverīnas dzērieni",
+    "types": [
+      "cider"
+    ],
+    "status": "working",
+    "address": "\"Ābols\", Trikātas pagasts, Valmieras novads, LV-4731",
+    "city": "Trikāta",
+    "region": "Vidzeme",
+    "lat": 57.51313,
+    "lng": 25.65407,
+    "coord_precision": "exact",
+    "founded": 2020,
+    "logo": "/logos/beverinas-dzerieni.png",
+    "website": "https://www.beverinasdzerieni.lv/",
+    "description": "A family-run farm cidery near Trikāta, named after the legendary Beverīna castle of ancient Tālava thought to have stood in the area, pressing cider, sparkling lemonades and juices from its own orchard of more than 6,000 apple and pear trees. Run by SIA 'Abula ābols' (founded 2020), it makes brut, semi-dry, semi-sweet, aronia and blackcurrant ciders, and also offers juice pressing and cider-making workshops at the farm."
   }
 ]
