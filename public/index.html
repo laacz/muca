@@ -41,7 +41,7 @@
 <body>
   <div class="app" x-data="muca" x-cloak
        :data-mode="dark ? 'dark' : 'light'"
-       :class="{ 'detail-open': selectedId }"
+       :class="{ 'detail-open': selectedId, 'search-open': searchOpen }"
        data-mode="light" data-tone="porcelain" data-density="compact" data-look="editorial"
        @keydown.escape.window="onEscape()"
        @keydown.window="onHotkey($event)">
@@ -64,6 +64,10 @@
       </div>
 
       <div class="hd-tools">
+        <button class="icon-btn hd-search" title="Search" aria-label="Search makers"
+                @click="openSearch()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+        </button>
         <button class="toggle-defunct" @click="hideDefunct = !hideDefunct"
                 :aria-pressed="hideDefunct ? 'true' : 'false'" aria-label="Hide defunct">
           <span class="switch" :data-on="hideDefunct ? '1' : '0'"><i></i></span>
@@ -95,6 +99,7 @@
               <input type="search" placeholder="Search makers, towns…" spellcheck="false" autocomplete="off" x-model="query" x-ref="search" />
               <span class="search-keys" aria-hidden="true"><kbd>/</kbd><kbd x-text="kbdK"></kbd></span>
             </label>
+            <button class="search-close" @click="closeSearch()">Close</button>
           </div>
           <template x-if="items.length === 0">
             <div class="empty"><div class="big">No makers found</div><div>Try a different search or filter.</div></div>

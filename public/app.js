@@ -61,6 +61,7 @@
         hideDefunct: true,
         query: "",
         selectedId: null,
+        searchOpen: false,
         aboutOpen: false,
         copied: null,
         copyTimer: null,
@@ -147,6 +148,18 @@
         },
         deselect() { this.selectedId = null; },
 
+        // Mobile search sheet. On desktop the search box is always visible, so
+        // these only matter under the 720px breakpoint (the header button that
+        // calls openSearch() is hidden above it).
+        openSearch() {
+          this.searchOpen = true;
+          this.$nextTick(() => { this.$refs.search.focus(); });
+        },
+        closeSearch() {
+          this.searchOpen = false;
+          this.query = ""; // a filter you can no longer see shouldn't keep pruning pins
+        },
+
         copy(key, text) {
           navigator.clipboard.writeText(text).then(() => {
             this.copied = key;
@@ -158,6 +171,7 @@
         onEscape() {
           if (this.aboutOpen) this.aboutOpen = false;
           else if (this.selectedId) this.deselect();
+          else if (this.searchOpen) this.closeSearch();
         },
 
         // "/" (outside a field) or Cmd/Ctrl+K (anywhere) focuses the search box
@@ -169,8 +183,11 @@
           const typing = t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable);
           if (slash && typing) return;
           e.preventDefault();
-          this.$refs.search.focus();
-          this.$refs.search.select();
+          this.searchOpen = true; // no-op on desktop; opens the sheet on mobile
+          this.$nextTick(() => {
+            this.$refs.search.focus();
+            this.$refs.search.select();
+          });
         },
 
         // Map (imperative Leaflet, best-effort)

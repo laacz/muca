@@ -244,7 +244,17 @@ button { font-family: inherit; cursor: pointer; }
 @media (max-width: 760px) { .side { width: 280px; } }
 
 /* lives inside .list so it scrolls away with the cards */
-.side-search { flex: none; }
+.side-search { flex: none; display: flex; gap: 10px; align-items: center; }
+.side-search .search { flex: 1; min-width: 0; }
+
+/* mobile-only escape hatches: the header search button and the sheet's Close.
+   Desktop always shows the search box in the sidebar, so both stay hidden. */
+.hd-search { display: none; }
+.search-close {
+  display: none; flex: none; height: 42px; padding: 0 14px;
+  border: 0; background: transparent;
+  color: var(--accent); font-size: 14px; font-weight: 600;
+}
 .search {
   display: flex; align-items: center; gap: 10px;
   background: var(--surface-2); border: 1px solid var(--line);
@@ -619,8 +629,9 @@ button { font-family: inherit; cursor: pointer; }
 }
 .about-link:hover { border-bottom-color: var(--accent); }
 
-/* RESPONSIVE - mobile is map-first: full-screen map, no list. Tapping a pin
-   slides the detail up as a bottom sheet (no list/search on small screens). */
+/* RESPONSIVE - mobile is map-first: full-screen map, no persistent list.
+   Tapping a pin slides the detail up as a bottom sheet; the header search
+   button opens the same sheet in list mode with the search box focused. */
 @media (max-width: 720px) {
   /* even the compact single-row header needs ~550px - wrap to two rows:
      brand + tools first, filter bar full-width underneath */
@@ -634,8 +645,14 @@ button { font-family: inherit; cursor: pointer; }
   .body { display: block; position: relative; }
   .map { position: absolute; inset: 0; width: 100%; height: 100%; }
 
-  /* hide the list UI on mobile - the map is the primary surface */
+  /* the map is the primary surface: no list unless the search sheet is open.
+     While a detail is open the list stays hidden so the sheet shows only the
+     maker - the detail's "All makers" back button returns to the list. */
   .side .list { display: none; }
+  .app.search-open:not(.detail-open) .side .list { display: flex; padding-top: 20px; }
+
+  .hd-search { display: grid; }
+  .search-close { display: block; }
 
   /* sidebar becomes a bottom sheet that only appears with an open detail */
   .side {
@@ -647,7 +664,12 @@ button { font-family: inherit; cursor: pointer; }
     transform: translateY(101%); transition: transform .28s ease;
     z-index: 1500;
   }
-  .app.detail-open .side { transform: translateY(0); }
+  .app.detail-open .side,
+  .app.search-open .side { transform: translateY(0); }
+
+  /* fixed height in list mode so the sheet doesn't jump while typing prunes
+     results; detail mode keeps sizing to its content */
+  .app.search-open:not(.detail-open) .side { height: 74vh; }
 
   /* grab handle for the sheet */
   .side::before {
